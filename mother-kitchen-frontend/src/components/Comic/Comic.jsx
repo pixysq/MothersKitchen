@@ -72,7 +72,7 @@ const Comic = () => {
             <img src={InayatHeadingImg} height={20} className="h-10 md:h-24" alt="inat" /> INayat
             <span className="flex items-end text-white">
               {' '}
-              & <img src={MummyHeadingImg} className="w-14 object-contain md:w-32" alt="mummy" /> Mummy
+              &  M<img src={MummyHeadingImg} className="w-14 object-contain md:w-32" alt="mummy" />mmy
             </span>
           </h2>
           <p className=" mt-2 md:mt-5 md:text-2xl">PRINCIPLE OF SUCCESS</p>

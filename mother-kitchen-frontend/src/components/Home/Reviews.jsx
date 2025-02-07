@@ -12,17 +12,38 @@ import {
   review9,
   reviewBg,
 } from '../../assets'
+import shefali from '../../assets/home/shefali.png'
+import sk  from '../../assets/home/sk.png'
+import nitin from '../../assets/home/nitin.png'
+import sv from '../../assets/home/sv.png'
+import bhavana from '../../assets/home/bhavana.png'
 import ReviewCard from './ReviewCard'
 import Slider from 'infinite-react-carousel'
 
 const reviews1 = [
   {
-    title: 'Thank you, Mothers Kitchen, for this delicious chana burfi',
-    desc: 'Dear Shivani As I sit here enjoying your chana burﬁ that I just received, I realized I have been extremely selﬁsh in not reaching out to you earlier. Just know I received your earlier letters. I am simply overwhelmed and touched by your conﬁdence in me. Your story moved me to tears. Your determination to power ahead is inspiring. Please let me know how I can help you.The world needs more people like you.',
+    title: 'Enjoying your chana burfi ',
+    desc: 'Dear Shivani As I sit here enjoying your chana burfi that I just received, I realized I have been extremely selfish in not reaching out to you earlier. Just know I received your earlier letters. I am simply overwhelmed and touched by your confidence in me. Your story moved me to tears. Your determination to power ahead is inspiring. ',
     name: 'Indra Nooyi',
     profession: 'Former Pepsico CEO',
-    bgColor: 'bg-[#446DBC]',
+    bgColor: 'bg-[#EF3D69]',
     image: review1,
+  },
+  {
+    title: 'Enjoying your Coconut cookies',
+    desc: "Coconut cookies and a hot cup of tea.. my kind of evening! Thank you Mother's Kitchen for these awesome coconut cookies..I am so loving them.. Your choco-chip and fennel seeds cookies are next on my list! Definitely going to order for them soon.",
+    name: 'Shefali',
+    profession: 'Director, Spencer Rpg Group',
+    bgColor: 'bg-[#EFD23D]',
+    image: shefali,
+  },
+  {
+    title: "Enjoying your Mother's Kitchen Products",
+    desc: "Received this amazing box of sweets from Mother's Kitchen.Just made my day!What more can a sweet lover like me ask in Covid times when I am being provided for my sweet cravings in the healthiest ways possible in the form of these Sanjeevani immunity boosters (Haldi burfi). They are prepared by bringing together Ayurvedic ingredients and are so delicious. Thank You Mother's Kitchen!",
+    name: 'SK Bose',
+    profession: 'General Manager, Indian Oil',
+    bgColor: 'bg-[#9F6FC5]',
+    image: sk,
   },
   {
     title: 'Sesame Seed Cookies are my favorite',
@@ -58,6 +79,30 @@ const reviews1 = [
   },
 ]
 const reviews2 = [
+  {
+    title: 'Enjoying your Haldi Barfi',
+    desc: 'Outstanding haldi barfi,best part is no-No guilty feeling thanks again',
+    name: 'Nitin Dutt',
+    profession: 'Senior Director,Global Sucing Walmart',
+    bgColor: 'bg-[#A66C42]',
+    image: nitin,
+  },
+  {
+    title: "Enjoying your sweets from Mother's Kitchen Gift Pack ",
+    desc: "A Gift Pack from Mother's Kitchen just lighted up my mood and I had to appreciate the amazing work they are doing..What an amazing combo of mouth melting cookies, sweets and health bites. Hat's off Mother's Kitchen! Their Chana Burfi and rose health bars are a must try!",
+    name: 'SV Unnithan',
+    profession: 'Head international Business,Daimler India Commercial Vehicles',
+    bgColor: 'bg-[#6FAD94]',
+    image: sv,
+  },
+  {
+    title: 'Enjoying your Atta cookies',
+    desc: "Just received this box of Atta cookies from Mother's Kitchen and I have to say they have a way to reach a person's heart..With a perfect crunch and So many health benefits Mother's Kitchen Atta cookies are my new favourites...Definitely gonna order more!Munching a cookie while I type",
+    name: 'Bhavana Aggarwal',
+    profession: 'Country Head HPE, Co-founder OYO group',
+    bgColor: 'bg-[#609ECB]',
+    image: bhavana,
+  },
   {
     title: 'I love these little taste bombs',
     desc: 'When I hear the word “street food”, my favorite Gol gappas is all I can think about. I love these little taste bombs but due to my shoots I get no time to go out and enjoy them. But now I can eat them anytime because of Mothers Kitchen Gol Gappas and Masala Mix.',

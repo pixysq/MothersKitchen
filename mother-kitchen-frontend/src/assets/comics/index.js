@@ -121,6 +121,25 @@ import Chap20Img2 from './mini series part 1/chapter 20/2.webp'
 import Chap20Img3 from './mini series part 1/chapter 20/3.webp'
 import Chap20Img4 from './mini series part 1/chapter 20/4.webp'
 import Chap20Img5 from './mini series part 1/chapter 20/5.webp'
+
+import Chap21Img1 from './mini series part 1/chapter 21/1.webp'
+import Chap21Img2 from './mini series part 1/chapter 21/2.webp'
+import Chap21Img3 from './mini series part 1/chapter 21/3.webp'
+import Chap21Img4 from './mini series part 1/chapter 21/4.webp'
+import Chap21Img5 from './mini series part 1/chapter 21/5.webp'
+
+import Chap22Img1 from './mini series part 1/chapter 22/1.webp'
+import Chap22Img2 from './mini series part 1/chapter 22/2.webp'
+import Chap22Img3 from './mini series part 1/chapter 22/3.webp'
+import Chap22Img4 from './mini series part 1/chapter 22/4.webp'
+import Chap22Img5 from './mini series part 1/chapter 22/5.webp'
+
+import Chap23Img1 from './mini series part 1/chapter 23/1.webp'
+import Chap23Img2 from './mini series part 1/chapter 23/2.webp'
+import Chap23Img3 from './mini series part 1/chapter 23/3.webp'
+import Chap23Img4 from './mini series part 1/chapter 23/4.webp'
+import Chap23Img5 from './mini series part 1/chapter 23/5.webp'
+
 import DownloadArrow from './download-arrow.png'
 import DownloadImg from './download-comic.webp'
 
@@ -230,4 +249,19 @@ export {
   Chap20Img3,
   Chap20Img4,
   Chap20Img5,
+  Chap21Img1,
+  Chap21Img2,
+  Chap21Img3,
+  Chap21Img4,
+  Chap21Img5,
+  Chap22Img1,
+  Chap22Img2,
+  Chap22Img3,
+  Chap22Img4,
+  Chap22Img5,
+  Chap23Img1,
+  Chap23Img2,
+  Chap23Img3,
+  Chap23Img4,
+  Chap23Img5,
 }

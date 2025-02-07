@@ -6,5 +6,9 @@ import Home from './Home'
 import MkCafe from './MkCafe'
 import NotFound from './NotFound'
 import Team from './Team'
-
-export { Home, About, Team, Brands, Comic, MkCafe, Contact, NotFound }
+import Recipes from './Recipes'
+import Awards from './Awards'
+import Pledge from './Pledge'
+import Beauty from '../components/Beauty/beauty'
+import Living from '../components/Living/living'
+export { Home, About, Team, Brands, Comic, MkCafe, Contact, NotFound, Recipes, Awards, Pledge, Beauty,Living }

@@ -99,6 +99,21 @@ import {
   Chap9Img3,
   Chap9Img4,
   Chap9Img5,
+  Chap21Img1,
+  Chap21Img2,
+  Chap21Img3,
+  Chap21Img4,
+  Chap21Img5,
+  Chap22Img1,
+  Chap22Img2,
+  Chap22Img3,
+  Chap22Img4,
+  Chap22Img5,
+  Chap23Img1,
+  Chap23Img2,
+  Chap23Img3,
+  Chap23Img4,
+  Chap23Img5,
 } from '../../assets/comics'
 
 export default [
@@ -108,6 +123,7 @@ export default [
     title: 'PERSONAL INITIATIVE',
     baseBgColor: 'bg-[#723FA5]',
     baseTextColor: 'text-[#B1A1C1]',
+    downloadPDFPath: 'comics/1- PERSONAL INITIATIVE.pdf',
     images: [
       {
         source: Chap1Img1,
@@ -137,6 +153,7 @@ export default [
     title: 'ACCURATE THINKING',
     baseBgColor: 'bg-[#A5A13F]',
     baseTextColor: 'text-[#A5A13F]',
+    downloadPDFPath: 'comics/2- ACCURATE THINKING.pdf',
     images: [
       {
         source: Chap2Img1,
@@ -166,6 +183,7 @@ export default [
     title: 'WHAT WE LEARN FROM MOUNTAINS',
     baseBgColor: 'bg-[#A54B3F]',
     baseTextColor: 'text-[#A54B3F]',
+    downloadPDFPath: 'comics/3- WHAT WE LEARN FROM MOUNTAINS.pdf',
     images: [
       {
         source: Chap3Img1,
@@ -195,6 +213,7 @@ export default [
     title: 'ADVERSITY AND DEFEAT',
     baseBgColor: 'bg-[#3FA598]',
     baseTextColor: 'text-[#3FA598]',
+    downloadPDFPath: 'comics/4- ADVERSITY AND DEFEAT.pdf',
     images: [
       {
         source: Chap4Img1,
@@ -224,6 +243,7 @@ export default [
     title: 'APPLIED FAITH PRINCIPLE',
     baseBgColor: 'bg-[#3F86A5]',
     baseTextColor: 'text-[#3F86A5]',
+    downloadPDFPath: 'comics/5- APPLIED FAITH PRINCIPLE.pdf',
     images: [
       {
         source: Chap5Img1,
@@ -253,6 +273,7 @@ export default [
     title: 'CONTROLLED ATTENTION PRINCIPLE',
     baseBgColor: 'bg-[#47A53F]',
     baseTextColor: 'text-[#47A53F]',
+    downloadPDFPath: 'comics/6- CONTROLLED ATTENTION PRINCIPLE.pdf',
     images: [
       {
         source: Chap6Img1,
@@ -282,6 +303,7 @@ export default [
     title: 'PLEASING PERSONALITY PRINCIPLE',
     baseBgColor: 'bg-[#473FA5]',
     baseTextColor: 'text-[#473FA5]',
+    downloadPDFPath: 'comics/7- PLEASING PERSONALITY PRINCIPLE.pdf',
     images: [
       {
         source: Chap7Img1,
@@ -311,6 +333,7 @@ export default [
     title: 'COOPERATION PRINCIPLE',
     baseBgColor: 'bg-[#BE8C2B]',
     baseTextColor: 'text-[#BE8C2B]',
+    downloadPDFPath: 'comics/8- COOPERATION PRINCIPLE.pdf',
     images: [
       {
         source: Chap8Img1,
@@ -340,6 +363,7 @@ export default [
     title: 'BE HONEST PRINCIPLE',
     baseBgColor: 'bg-[#3FA55B]',
     baseTextColor: 'text-[#3FA55B]',
+    downloadPDFPath: 'comics/9- BE HONEST PRINCIPLE.pdf',
     images: [
       {
         source: Chap9Img1,
@@ -369,6 +393,7 @@ export default [
     title: 'Definteness Purpose',
     baseBgColor: 'bg-[#783FA5]',
     baseTextColor: 'text-[#783FA5]',
+    downloadPDFPath: 'comics/10- Definteness Purpose.pdf',
     images: [
       {
         source: Chap10Img1,
@@ -398,6 +423,7 @@ export default [
     title: 'Be Hardworking',
     baseBgColor: 'bg-[#C02626]',
     baseTextColor: 'text-[#C02626]',
+    downloadPDFPath: 'comics/11- Be Hardworking.pdf',
     images: [
       {
         source: Chap11Img1,
@@ -427,6 +453,7 @@ export default [
     title: 'Enthusiasm Principle',
     baseBgColor: 'bg-[#5F93D0]',
     baseTextColor: 'text-[#5F93D0]',
+    downloadPDFPath: 'comics/12- Enthusiasm Principle.pdf',
     images: [
       {
         source: Chap12Img1,
@@ -456,6 +483,7 @@ export default [
     title: 'WHAT WE LEARN FROM ANTS',
     baseBgColor: 'bg-[#C88624]',
     baseTextColor: 'text-[#C88624]',
+    downloadPDFPath: 'comics/13- WHAT WE LEARN FROM ANTS.pdf',
     images: [
       {
         source: Chap13Img1,
@@ -485,6 +513,7 @@ export default [
     title: 'HABIT FORMATION PRINCIPLE',
     baseBgColor: 'bg-[#3FA56E]',
     baseTextColor: 'text-[#3FA56E]',
+    downloadPDFPath: 'comics/14- HABIT FORMATION PRINCIPLE.pdf',
     images: [
       {
         source: Chap14Img1,
@@ -514,6 +543,7 @@ export default [
     title: 'WHAT WE LEARN FROM TREES',
     baseBgColor: 'bg-[#9E1177]',
     baseTextColor: 'text-[#9E1177]',
+    downloadPDFPath: 'comics/15- WHAT WE LEARN FROM TREES.pdf',
     images: [
       {
         source: Chap15Img1,
@@ -543,6 +573,7 @@ export default [
     title: 'WHAT WE LEARN FROM BEES',
     baseBgColor: 'bg-[#3F80A5]',
     baseTextColor: 'text-[#3F80A5]',
+    downloadPDFPath: 'comics/16- WHAT WE LEARN FROM BEES.pdf',
     images: [
       {
         source: Chap16Img1,
@@ -572,6 +603,7 @@ export default [
     title: 'BUDGETING TIME AND MONEY',
     baseBgColor: 'bg-[#A90C0C]',
     baseTextColor: 'text-[#A90C0C]',
+    downloadPDFPath: 'comics/17- BUDGETING TIME AND MONEY.pdf',
     images: [
       {
         source: Chap17Img1,
@@ -601,6 +633,7 @@ export default [
     title: 'MASTER MIND',
     baseBgColor: 'bg-[#8435C2]',
     baseTextColor: 'text-[#8435C2]',
+    downloadPDFPath: 'comics/18- MASTER MIND.pdf',
     images: [
       {
         source: Chap18Img1,
@@ -630,6 +663,7 @@ export default [
     title: 'IMAGINATION',
     baseBgColor: 'bg-[#C66925]',
     baseTextColor: 'text-[#C66925]',
+    downloadPDFPath: 'comics/19- IMAGINATION.pdf',
     images: [
       {
         source: Chap19Img1,
@@ -659,6 +693,7 @@ export default [
     title: 'WHAT WE LEARN FROM FISH',
     baseBgColor: 'bg-[#3FA56E]',
     baseTextColor: 'text-[#3FA56E]',
+    downloadPDFPath: 'comics/20- WHAT WE LEARN FROM FISH.pdf',
     images: [
       {
         source: Chap20Img1,
@@ -679,6 +714,96 @@ export default [
       {
         source: Chap20Img5,
         color: 'bg-[#65C282]',
+      },
+    ],
+  },
+  {
+    seriesName: 'Mini Series part 1',
+    chapter: '21',
+    title: 'SELF DISCIPLINE',
+    baseBgColor: 'bg-[#3FA5A5]',
+    baseTextColor: 'text-[#3FA5A5]',
+    downloadPDFPath: 'comics/21- SELF DESCIPLINE.pdf',
+    images: [
+      {
+        source: Chap21Img1,
+        color: 'bg-[#BBD669]',
+      },
+      {
+        source: Chap21Img2,
+        color: 'bg-[#EDA35E]',
+      },
+      {
+        source: Chap21Img3,
+        color: 'bg-[#EF7DB0]',
+      },
+      {
+        source: Chap21Img4,
+        color: 'bg-[#EF7DB0]',
+      },
+      {
+        source: Chap21Img5,
+        color: 'bg-[#45B7E4]',
+      },
+    ],
+  },
+  {
+    seriesName: 'Mini Series Part 1',
+    chapter: '22',
+    title: 'WHAT WE LEARN FROM FLOWERS',
+    baseBgColor: 'bg-[#3FA568]',
+    baseTextColor: 'text-[#3FA567]',
+    downloadPDFPath: 'comics/22- WHAT WE LEARN FROM FLOWERS.pdf',
+    images: [
+      {
+        source: Chap22Img1,
+        color: 'bg-[#BBD669]',
+      },
+      {
+        source: Chap22Img2,
+        color: 'bg-[#EDA35E]',
+      },
+      {
+        source: Chap22Img3,
+        color: 'bg-[#EF7DB0]',
+      },
+      {
+        source: Chap22Img4,
+        color: 'bg-[#5DBBE9]',
+      },
+      {
+        source: Chap22Img5,
+        color: 'bg-[#63C6EE]',
+      },
+    ],
+  },
+  {
+    seriesName: 'Mini Series Part 1',
+    chapter: '23',
+    title: 'POSITIVE MENTAL ATTITUDE',
+    baseBgColor: 'bg-[#3F5BA5]',
+    baseTextColor: 'text-[#3F5BA5]',
+    downloadPDFPath: 'comics/23- POSITIVE MENTAL ATTITUDE.pdf',
+    images: [
+      {
+        source: Chap23Img1,
+        color: 'bg-[#BBD669]',
+      },
+      {
+        source: Chap23Img2,
+        color: 'bg-[#EDA35E]',
+      },
+      {
+        source: Chap23Img3,
+        color: 'bg-[#EF7DB0]',
+      },
+      {
+        source: Chap23Img4,
+        color: 'bg-[#5DBBE9]',
+      },
+      {
+        source: Chap23Img5,
+        color: 'bg-[#63C6EE]',
       },
     ],
   },

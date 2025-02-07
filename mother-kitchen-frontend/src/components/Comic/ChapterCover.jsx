@@ -1,6 +1,17 @@
 import { ContinuedBg, ContinuedSmBg } from '../../assets/comics'
+import { FaLongArrowAltDown } from 'react-icons/fa'
+import arrowdownload from '../../assets/comics/arrowdownload.png'
 
-const ChapterCover = ({ seriesName, baseTextColor, baseBgColor, chapter, idx, title, images = [] }) => {
+const ChapterCover = ({
+  seriesName,
+  baseTextColor,
+  baseBgColor,
+  chapter,
+  idx,
+  title,
+  downloadPDFPath,
+  images = [],
+}) => {
   return (
     <div className="my-16 ">
       <div
@@ -55,13 +66,58 @@ const ChapterCover = ({ seriesName, baseTextColor, baseBgColor, chapter, idx, ti
               </div>
             )
           })}
+
           <div className="relative flex items-center md:justify-center">
             <img src={ContinuedBg} alt="continue" className="absolute hidden md:block" />
-            <img src={ContinuedSmBg} alt="continue" className="absolute w-[12rem]  md:hidden" />
-            <p className="z-[1] pl-5 font-gluten font-medium md:pl-0 md:text-3xl">
-              To Be <br className="hidden md:block" /> <span className=" md:text-5xl">Continued...</span>
-            </p>
+            <img src={ContinuedSmBg} alt="continue" className="absolute w-[12rem] md:hidden" />
+
+            {/* Wrap the text and download link in a flex container with gap */}
+            <div className="flex items-center gap-6 pl-5 sm:flex-col md:gap-4 md:pl-0">
+              <p className="z-[1] font-gluten font-medium md:text-3xl">
+                To Be <br className="hidden md:block" />
+                <span className="md:text-5xl">Continued...</span>
+              </p>
+
+              {/* Show in a column layout on small screens */}
+              <div className="mt-4 block flex flex-col items-center justify-between gap-4 sm:hidden">
+                <a
+                  className="flex w-full flex-row flex-wrap items-center justify-between"
+                  href={downloadPDFPath}
+                  download={downloadPDFPath}
+                >
+                  <div>
+                    <p
+                      className="black-shadow text-center font-gluten text-xs font-black text-[#039898] sm:text-lg"
+                      style={{ lineHeight: '5px' }}
+                    >
+                      DOWNLOAD
+                    </p>
+                    <p className="black-shadow text-center font-gluten text-xs font-black text-[#039898] sm:text-lg">
+                      THIS STORY
+                    </p>
+                  </div>
+                  <img src={arrowdownload} alt="Download arrow" className="ml-2 h-14 w-14" />
+                </a>
+              </div>
+            </div>
           </div>
+        </div>
+
+        <div className="-mt-20 mb-8 mr-4 hidden items-center justify-end gap-3 md:flex">
+          <a className="flex flex-row items-center gap-3" href={downloadPDFPath} download={downloadPDFPath}>
+            <div>
+              <p
+                className="black-shadow text-center font-gluten text-xs font-black text-[#039898] sm:text-lg"
+                style={{ lineHeight: '5px' }}
+              >
+                DOWNLOAD
+              </p>
+              <p className="black-shadow text-center font-gluten text-3xl font-black text-[#039898] sm:text-lg">
+                THIS STORY
+              </p>
+            </div>
+            <img src={arrowdownload} alt="Download arrow" className="h-14 w-14" />
+          </a>
         </div>
       </div>
     </div>

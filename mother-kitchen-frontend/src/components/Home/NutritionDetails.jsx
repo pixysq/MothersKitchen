@@ -1,25 +1,25 @@
-import { Bottle, Drop, FatFree, GirlBadge, Vegan } from '../../assets'
+import { GirlBadge, medicinal, rich, preservative, antioxident } from '../../assets'
 
 const nutritionData = [
   {
-    image: Bottle,
-    text: 'FREE OF',
-    textred: ' ANYTHING ARTIFICIAL',
+    image: antioxident,
+    text: '',
+    textred: 'Antioxidant Rich',
   },
   {
-    image: Drop,
-    text: 'No',
-    textred: ' Preservatives',
+    image: medicinal,
+    text: '',
+    textred: 'High medicinal Value',
   },
   {
-    image: Vegan,
-    text: 'Vegan &',
-    textred: ' Plant based',
+    image: preservative,
+    text: '',
+    textred: 'No Preservatives',
   },
   {
-    image: FatFree,
-    text: 'TRANS ',
-    textred: 'FAT FREE',
+    image: rich,
+    text: '',
+    textred: 'Rich in curcumin ',
   },
 ]
 

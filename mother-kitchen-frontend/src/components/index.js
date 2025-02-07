@@ -6,6 +6,7 @@ import { ContactDetails, ContactForm, ContactInfo } from './Contact'
 import { AboutHero } from './About'
 const LastSection = lazy(() => import('./LastSection'))
 import { TeamInfo } from './Team'
+import Recipes from '../components/Home/recipes'
 import Loader from './Loader'
 export {
   Nutrition,
@@ -23,4 +24,5 @@ export {
   ContactDetails,
   ContactForm,
   ContactInfo,
+  Recipes,
 }

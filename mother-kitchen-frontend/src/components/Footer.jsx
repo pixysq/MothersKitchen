@@ -1,21 +1,57 @@
 import Button from './custom/Button'
 import { TiSocialFacebookCircular } from 'react-icons/ti'
 import { RiInstagramLine, RiTwitterLine, RiUser3Fill } from 'react-icons/ri'
+import { FiYoutube } from 'react-icons/fi'
 import { TbBrandLinkedin } from 'react-icons/tb'
 import { BsQuestionCircle } from 'react-icons/bs'
 import { TextLogo, footerImg } from '../assets'
 import { Link, useLocation } from 'react-router-dom'
-
+import emailjs from '@emailjs/browser'
+import { useState } from 'react'
 const FooterSm = ({ location }) => {
+  const [email, setEmail] = useState('')
+
+  const handleSignUp = () => {
+    if (!email || !email.includes('@')) {
+      alert('Please enter a valid email address.')
+      return
+    }
+
+    const serviceID = ''
+    const templateID = ''
+    const userID = ''
+
+    // Prepare the template parameters – these must match the variables in your EmailJS template
+    const templateParams = {
+      user_email: email,
+      // You can add more template variables here if needed.
+    }
+
+    emailjs
+      .send(serviceID, templateID, templateParams, userID)
+      .then((result) => {
+        console.log('Email successfully sent!', result.text)
+        alert('Thank you for signing up!')
+        setEmail('') // Clear the input on success
+      })
+      .catch((error) => {
+        console.error('There was an error sending the email:', error.text)
+        alert('Oops! Something went wrong. Please try again later.')
+      })
+  }
   return (
     <footer className="m-1 mt-20 rounded-bl-3xl rounded-br-3xl border-4 border-b-[14px] border-l-4 border-r-[10px] border-black bg-[#031E29] p-2 pb-0 text-white">
       <div className="mb-5 mt-2 flex w-full justify-between rounded-full border-2 border-b-4 border-r-4 border-black bg-white p-1">
         <input
           type="email"
+          onChange={(e) => setEmail(e.target.value)} // Update state on input change
           className="w-[60%] bg-transparent py-1 pl-3 font-lexend text-sm tracking-tighter text-black outline-none"
           placeholder="EMAIL ADDRESS"
         />
-        <Button className="!bg-green-base !py-2 font-lexend text-sm tracking-tighter hover:!bg-red-base">
+        <Button
+          className="!bg-green-base !py-2 font-lexend text-sm tracking-tighter hover:!bg-red-base"
+          onClick={handleSignUp}
+        >
           Sign Up
         </Button>
       </div>
@@ -23,19 +59,33 @@ const FooterSm = ({ location }) => {
       <div className=" relative grid grid-cols-2 gap-5 font-gluten">
         <div className="text-xs">
           <div className="social-medias flex gap-3">
-            <RiInstagramLine className="h-10 w-10" />
-            <TiSocialFacebookCircular className="h-10 w-10" />
-            <TbBrandLinkedin className="h-10 w-10" />
-            <RiTwitterLine className="h-10 w-10" />
+            <Link to="https://www.instagram.com/motherskitchen.co?igsh=MXRlaWJoYXFmcXY2MQ==">
+              <RiInstagramLine className="h-8 w-8" />
+            </Link>
+            <Link to="https://m.facebook.com/motherskitchen.co/">
+              {' '}
+              <TiSocialFacebookCircular className="h-8 w-8" />
+            </Link>
+            <Link to="https://www.linkedin.com/company/mother%27s-kitchen/">
+              {' '}
+              <TbBrandLinkedin className="h-8 w-8" />
+            </Link>
+            <Link to="https://www.youtube.com/@MothersKitchen2023">
+              {' '}
+              <FiYoutube className="h-8 w-8" />
+            </Link>
           </div>
           <div className="my-5">
             <a href="mailto:contact@motherskitchen.co.in" className="font-gluten">
               Contact@motherskitchen.co.in
             </a>
           </div>
-          <p className="my-2 mb-20 flex items-start font-bold">
-            <span>Contact Us </span> <RiUser3Fill className="h-3 w-3" />
-          </p>
+          <div className="mb-5 flex items-center  justify-center  rounded-full border-2  border-b-8 border-r-8 border-black bg-green-base py-2 font-lexend text-xs uppercase tracking-tighter">
+            <p className="flex justify-center pl-1  pr-1 text-center font-bold">
+              <span>Contact Us </span> <RiUser3Fill className="h-3 w-3" />
+            </p>
+          </div>
+          <p className="mb-20 font-gluten text-sm">+91 1800 270 4009</p>
         </div>
         <img src={footerImg} alt="footer" className="absolute bottom-0 left-[45%] w-[220px] translate-x-[-50%]" />
 
@@ -83,13 +133,43 @@ const FooterSm = ({ location }) => {
               </div>
             </div>
           </div>
-          <img src={TextLogo} alt="logo" className="relative -right-5 top-16 w-20" />
+          <img src={TextLogo} alt="logo" className="absolute bottom-10 right-2 w-20" />
         </div>
       </div>
     </footer>
   )
 }
 const FooterMd = ({ location }) => {
+  const [email, setEmail] = useState('')
+
+  const handleSignUp = () => {
+    if (!email || !email.includes('@')) {
+      alert('Please enter a valid email address.')
+      return
+    }
+
+    const serviceID = ''
+    const templateID = ''
+    const userID = ''
+
+    // Prepare the template parameters – these must match the variables in your EmailJS template
+    const templateParams = {
+      user_email: email,
+      // You can add more template variables here if needed.
+    }
+
+    emailjs
+      .send(serviceID, templateID, templateParams, userID)
+      .then((result) => {
+        console.log('Email successfully sent!', result.text)
+        alert('Thank you for signing up!')
+        setEmail('') // Clear the input on success
+      })
+      .catch((error) => {
+        console.error('There was an error sending the email:', error.text)
+        alert('Oops! Something went wrong. Please try again later.')
+      })
+  }
   return (
     <footer className="m-1 mt-20 rounded-bl-3xl rounded-br-3xl border-4 border-b-[15px] border-l-[10px] border-r-[10px] border-black bg-[#031E29] p-4 pb-0 text-white">
       <a href="mailto:contact@motherskitchen.co.in" className="font-gluten text-xs">
@@ -100,22 +180,34 @@ const FooterMd = ({ location }) => {
           <div className="my-5 flex w-[300px] justify-between rounded-full border-2 border-b-4 border-r-4 border-black bg-white p-1">
             <input
               type="email"
+              onChange={(e) => setEmail(e.target.value)} // Update state on input change
               className="w-[70%] bg-transparent py-1 pl-4 font-lexend text-[8px] tracking-tighter text-black outline-none"
               placeholder="EMAIL ADDRESS"
             />
-            <Button className="bg-green-base text-[8px]">Sign Up</Button>
+            <Button className="bg-green-base text-[8px]" onClick={handleSignUp}>
+              Sign Up
+            </Button>
           </div>
           <div className="social-medias flex gap-7">
-            <RiInstagramLine className="h-10 w-10 md:h-8 md:w-8 lg:h-10 lg:w-10" />
-            <TiSocialFacebookCircular className="h-10 w-10 md:h-8 md:w-8 lg:h-10 lg:w-10" />
-            <TbBrandLinkedin className="h-10 w-10 md:h-8 md:w-8 lg:h-10 lg:w-10" />
-            <RiTwitterLine className="h-10 w-10 md:h-8 md:w-8 lg:h-10 lg:w-10" />
+            <Link to="https://www.instagram.com/motherskitchen.co?igsh=MXRlaWJoYXFmcXY2MQ==">
+              {' '}
+              <RiInstagramLine className="h-10 w-10 md:h-8 md:w-8 lg:h-10 lg:w-10" />
+            </Link>
+            <Link to="https://m.facebook.com/motherskitchen.co/">
+              {' '}
+              <TiSocialFacebookCircular className="h-10 w-10 md:h-8 md:w-8 lg:h-10 lg:w-10" />
+            </Link>
+            <Link to="https://www.linkedin.com/company/mother%27s-kitchen/">
+              {' '}
+              <TbBrandLinkedin className="h-10 w-10 md:h-8 md:w-8 lg:h-10 lg:w-10" />
+            </Link>
+            <Link to="https://www.youtube.com/@MothersKitchen2023">
+              {' '}
+              <FiYoutube className="h-10 w-10 md:h-8 md:w-8 lg:h-10 lg:w-10" />
+            </Link>
           </div>
-          <p className="my-5 flex items-start text-xl font-bold">
-            <span>Contact Us</span> <RiUser3Fill className="h-5 w-8" />
-          </p>
-          <img src={TextLogo} alt="logo" className="w-[10rem]" />
         </div>
+        <img src={TextLogo} alt="logo" className="absolute bottom-0 left-[2%] w-[10rem]" />
         <img src={footerImg} alt="footer" className="absolute bottom-0 left-[50%] w-[350px] translate-x-[-50%]" />
         <div className=" ml-auto flex  flex-col text-xl">
           <div className="flex justify-end pr-10">
@@ -162,11 +254,12 @@ const FooterMd = ({ location }) => {
             </div>
           </div>
           <div className="ml-auto mt-10 pr-5">
-            <div className="flex  w-24 items-center  rounded-full border-2  border-b-8 border-r-8 border-black bg-green-base py-2 font-lexend text-xs uppercase tracking-tighter">
-              <BsQuestionCircle className="mx-2 h-5 w-5" />
-              <span className="text-sm">Help</span>
+            <div className="flex  items-center  rounded-full border-2  border-b-8 border-r-8 border-black bg-green-base py-2 font-lexend text-xs uppercase tracking-tighter">
+              <p className="flex p-1">
+                <span>Contact Us</span> <RiUser3Fill className="h-5 w-8" />
+              </p>
             </div>
-            <p className="mt-5 text-sm">+91 931 041 1544</p>
+            <p className="mt-5 text-sm">+91 1800 270 4009</p>
           </div>
         </div>
       </div>
@@ -174,6 +267,36 @@ const FooterMd = ({ location }) => {
   )
 }
 const FooterLg = ({ location }) => {
+  const [email, setEmail] = useState('')
+
+  const handleSignUp = () => {
+    if (!email || !email.includes('@')) {
+      alert('Please enter a valid email address.')
+      return
+    }
+
+    const serviceID = ''
+    const templateID = ''
+    const userID = ''
+
+    // Prepare the template parameters – these must match the variables in your EmailJS template
+    const templateParams = {
+      user_email: email,
+      // You can add more template variables here if needed.
+    }
+
+    emailjs
+      .send(serviceID, templateID, templateParams, userID)
+      .then((result) => {
+        console.log('Email successfully sent!', result.text)
+        alert('Thank you for signing up!')
+        setEmail('') // Clear the input on success
+      })
+      .catch((error) => {
+        console.error('There was an error sending the email:', error.text)
+        alert('Oops! Something went wrong. Please try again later.')
+      })
+  }
   return (
     <footer className="m-3 mt-20 rounded-bl-3xl rounded-br-3xl border-4 border-b-[15px] border-l-[10px] border-r-[10px] border-black bg-[#031E29] p-4 pb-0 text-white">
       <a href="mailto:contact@motherskitchen.co.in" className="font-gluten">
@@ -184,24 +307,37 @@ const FooterLg = ({ location }) => {
           <div className="my-5 flex w-[400px] justify-between rounded-full border-2 border-b-4 border-r-4 border-black bg-white p-2">
             <input
               type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)} // Update state on input change
               className="w-[60%] bg-transparent py-2 pl-4 font-lexend text-sm tracking-tighter text-black outline-none"
               placeholder="EMAIL ADDRESS"
             />
-            <Button className="!bg-green-base !py-2 font-lexend text-sm tracking-tighter hover:!bg-red-base">
+            <Button
+              onClick={handleSignUp}
+              className="!bg-green-base !py-2 font-lexend text-sm tracking-tighter hover:!bg-red-base"
+            >
               Sign Up
             </Button>
           </div>
           <div className="social-medias flex gap-7">
-            <RiInstagramLine className="h-10 w-10 cursor-pointer duration-300 hover:text-green-base" />
-            <TiSocialFacebookCircular className="h-10 w-10 cursor-pointer duration-300 hover:text-green-base" />
-            <TbBrandLinkedin className="h-10 w-10 cursor-pointer duration-300 hover:text-green-base" />
-            <RiTwitterLine className="h-10 w-10 cursor-pointer duration-300 hover:text-green-base" />
+            <Link to="https://www.instagram.com/motherskitchen.co?igsh=MXRlaWJoYXFmcXY2MQ==">
+              <RiInstagramLine className="h-10 w-10 cursor-pointer duration-300 hover:text-green-base" />
+            </Link>
+            <Link to="https://m.facebook.com/motherskitchen.co/">
+              {' '}
+              <TiSocialFacebookCircular className="h-10 w-10 cursor-pointer duration-300 hover:text-green-base" />
+            </Link>
+            <Link to="https://www.linkedin.com/company/mother%27s-kitchen/">
+              {' '}
+              <TbBrandLinkedin className="h-10 w-10 cursor-pointer duration-300 hover:text-green-base" />
+            </Link>
+            <Link to="https://www.youtube.com/@MothersKitchen2023">
+              {' '}
+              <FiYoutube className="h-10 w-10 cursor-pointer duration-300 hover:text-green-base" />
+            </Link>
           </div>
-          <p className="my-10 flex items-start text-xl font-bold">
-            <span>Contact Us</span> <RiUser3Fill className="h-5 w-8" />
-          </p>
-          <img src={TextLogo} alt="logo" className="w-[13rem]" />
         </div>
+        <img src={TextLogo} alt="logo" className="absolute bottom-0 left-[6%] w-[13rem] " />
         <img src={footerImg} alt="footer" className="absolute bottom-0 left-[50%] w-[550px] translate-x-[-50%]" />
         <div className=" ml-auto flex  flex-col text-xl">
           <div className="flex justify-end pr-20">
@@ -250,13 +386,14 @@ const FooterLg = ({ location }) => {
           <div className="ml-auto mt-20 pr-5">
             <Link
               to={'/contact'}
-              className="flex  w-32 items-center rounded-full border-2 border-b-8 border-r-8 border-black bg-green-base py-3 font-lexend text-sm uppercase tracking-tighter duration-300 hover:bg-red-base"
+              className="flex items-center rounded-full border-2 border-b-8 border-r-8 border-black bg-green-base p-4 py-3 font-lexend text-sm uppercase tracking-tighter duration-300 hover:bg-red-base"
               onClick={() => scroll(0, 0)}
             >
-              <BsQuestionCircle className="mx-3 h-6 w-6" />
-              <span>Help</span>
+              <p className="flex">
+                <span>Contact Us</span> <RiUser3Fill className="h-5 w-8" />
+              </p>
             </Link>
-            <p className="mt-10">+91 931 041 1544</p>
+            <p className="mt-10">+91 1800 270 4009</p>
           </div>
         </div>
       </div>
