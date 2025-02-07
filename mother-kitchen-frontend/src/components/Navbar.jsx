@@ -10,8 +10,8 @@ const navLinks = [
   { name: 'Home', path: '/' },
   { name: 'About Us', path: '/about' },
   { name: 'Team', path: '/team' },
-  { name: 'Brands', path: '/brands' },
-  { name: 'Pledge', path: '/pledge' },
+  { name: 'Our Brands', path: '/brands' },
+  { name: 'Our Pledge', path: '/pledge' },
   { name: 'Awards', path: '/awards' },
   { name: 'Comic', path: '/comic' },
 ]
@@ -141,7 +141,7 @@ const NavMd = () => {
         <div className="flex items-center justify-start py-5">
           <Link
             to="/contact"
-            className={`rounded-lg border-[2.5px] p-1 text-white ${
+            className={`rounded-lg border-[2.5px] p-1 text-white bg-[#9F2700] ${
               location.pathname === '/contact' ? 'rounded border-black bg-red-base' : ''
             }`}
           >
@@ -189,7 +189,7 @@ const NavLg = () => {
         <div className="flex items-center justify-start">
           <Link
             to="/contact"
-            className={`rounded-lg border-[2.5px] p-1 text-white ${
+            className={`rounded-lg border-[2.5px] p-1 text-white bg-[#9F2700] ${
               location.pathname === '/contact' ? 'rounded border-black bg-red-base' : ''
             }`}
           >
