@@ -1,7 +1,7 @@
 import { Girl, HHLeft, HHLeftMobile, HHRight, HHRightMobile, HeroLVec, ScrollDown } from '../../assets'
 import { HeroBgSm } from '../../assets/mobile'
 import Button from '../custom/Button'
-
+import { Link } from 'react-router-dom'
 const HeroSm = () => {
   return (
     <div className="flex flex-col">
@@ -48,7 +48,9 @@ const HeroMd = () => {
         <p className="mt-5  font-lexend text-lg">
           Bringing the warmth of mom&rsquo;s cooking to every kitchen, one delicious bite at a time.
         </p>
-        <Button className="flex-1font-semibold mt-5 !px-8 text-2xl">Shop Now</Button>
+        <Button className="flex-1font-semibold mt-5 !px-8 text-2xl">
+          <Link to="https://rzp.io/rzp/motherskitchen">Shop Now </Link>{' '}
+        </Button>
       </div>
       <div className="flex flex-1 items-start justify-end pt-4">
         <img loading="lazy" src={Girl} alt="gitl" />
@@ -71,7 +73,9 @@ const HeroLg = () => {
         <p className="mt-5  font-lexend text-xl">
           Bringing the warmth of mom&rsquo;s <br /> cooking to every kitchen, one <br /> delicious bite at a time.
         </p>
-        <Button className="flex-1font-semibold mt-5 !px-8 text-2xl">Shop Now</Button>
+        <Button className="flex-1font-semibold mt-5 !px-8 text-2xl">
+          <Link to="https://rzp.io/rzp/motherskitchen">Shop Now</Link>
+        </Button>
       </div>
       <div className="flex flex-1 items-start justify-end pt-4">
         <img loading="lazy" src={Girl} alt="gitl" />

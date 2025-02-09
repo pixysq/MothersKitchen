@@ -60,19 +60,22 @@ const FooterSm = ({ location }) => {
         <div className="text-xs">
           <div className="social-medias flex gap-3">
             <Link to="https://www.instagram.com/motherskitchen.co?igsh=MXRlaWJoYXFmcXY2MQ==">
-              <RiInstagramLine className="h-8 w-8" />
+              <RiInstagramLine className="h-8 w-6" />
             </Link>
             <Link to="https://m.facebook.com/motherskitchen.co/">
               {' '}
-              <TiSocialFacebookCircular className="h-8 w-8" />
+              <TiSocialFacebookCircular className="h-8 w-6" />
             </Link>
             <Link to="https://www.linkedin.com/company/mother%27s-kitchen/">
               {' '}
-              <TbBrandLinkedin className="h-8 w-8" />
+              <TbBrandLinkedin className="h-8 w-6" />
+            </Link>
+            <Link to="">
+              <RiTwitterLine className="h-8 w-6" />
             </Link>
             <Link to="https://www.youtube.com/@MothersKitchen2023">
               {' '}
-              <FiYoutube className="h-8 w-8" />
+              <FiYoutube className="h-8 w-6" />
             </Link>
           </div>
           <div className="my-5">
@@ -200,6 +203,9 @@ const FooterMd = ({ location }) => {
             <Link to="https://www.linkedin.com/company/mother%27s-kitchen/">
               {' '}
               <TbBrandLinkedin className="h-10 w-10 md:h-8 md:w-8 lg:h-10 lg:w-10" />
+            </Link>
+            <Link to="">
+              <RiTwitterLine className="h-10 w-10 md:h-8 md:w-8 lg:h-10 lg:w-10"/>
             </Link>
             <Link to="https://www.youtube.com/@MothersKitchen2023">
               {' '}
@@ -330,6 +336,9 @@ const FooterLg = ({ location }) => {
             <Link to="https://www.linkedin.com/company/mother%27s-kitchen/">
               {' '}
               <TbBrandLinkedin className="h-10 w-10 cursor-pointer duration-300 hover:text-green-base" />
+            </Link>
+            <Link to="">
+              <RiTwitterLine className="h-10 w-10 cursor-pointer duration-300 hover:text-green-base"  />
             </Link>
             <Link to="https://www.youtube.com/@MothersKitchen2023">
               {' '}

@@ -1,3 +1,7 @@
+import React from 'react';
+import BorderDiv from '../custom/BorderDiv';
+import ImageBox from '../custom/ImageBox';
+import TeamInfoCard from './TeamInfoCard';
 import {
   Shivani,
   TeamHeading,
@@ -9,15 +13,12 @@ import {
   shrikumar,
   stuart,
   abhishek,
-} from '../../assets'
-import BorderDiv from '../custom/BorderDiv'
-import ImageBox from '../custom/ImageBox'
-import TeamInfoCard from './TeamInfoCard'
+} from '../../assets';
 
 const teamDetails = [
   {
     name: 'Joshua Morgolis',
-    desc: 'Professor of Business Administration at Harvard Business School, Business Administration',
+    desc: 'Professor of Business Administration at <strong>Harvard Business School</strong>, Business Administration',
     image: joshua,
   },
   {
@@ -52,10 +53,10 @@ const teamDetails = [
   },
   {
     name: 'Abhishek Singh',
-    desc: 'Tata Tea & Tata Coffee ( Now Tata Global Beverage):2000 to 2009   2009 till date : Britannia Industries Ltd.',
+    desc: 'Tata Tea & Tata Coffee ( Now Tata Global Beverage):2000 to 2009 <br/> <br/>  2009 till date : Britannia Industries Ltd.',
     image: abhishek,
   },
-]
+];
 
 const TeamInfo = () => {
   return (
@@ -101,7 +102,7 @@ const TeamInfo = () => {
         </div>
       </BorderDiv>
     </div>
-  )
-}
+  );
+};
 
-export default TeamInfo
+export default TeamInfo;

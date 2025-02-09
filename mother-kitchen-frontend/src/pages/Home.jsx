@@ -10,7 +10,7 @@ const Home = () => {
       <Recipes />
       <Reviews />
       <InstagramSection />
-      <LastSection elements={['About', 'Comic', 'Contact']} />
+      <LastSection elements={['Comic', 'Brands', 'Contact']} />
     </div>
   )
 }

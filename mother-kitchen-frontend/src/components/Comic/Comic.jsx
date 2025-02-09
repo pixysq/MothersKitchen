@@ -69,10 +69,11 @@ const Comic = () => {
       <div className="flex px-5 md:justify-between">
         <div className="w-full font-gluten font-bold text-white">
           <h2 className="black-shadow -ml-4 flex items-end gap-2 text-xl text-green-base md:ml-0 md:gap-4 md:text-6xl">
-            <img src={InayatHeadingImg} height={20} className="h-10 md:h-24" alt="inat" /> INayat
+            <img src={InayatHeadingImg}  className="md:h-24 h-14 md:w-20" alt="inat" /> INayat
             <span className="flex items-end text-white">
               {' '}
-              &  M<img src={MummyHeadingImg} className="w-14 object-contain md:w-32" alt="mummy" />mmy
+              & M<img src={MummyHeadingImg} className="h-25 w-14 object-contain md:w-40" alt="mummy" />
+              mmy
             </span>
           </h2>
           <p className=" mt-2 md:mt-5 md:text-2xl">PRINCIPLE OF SUCCESS</p>

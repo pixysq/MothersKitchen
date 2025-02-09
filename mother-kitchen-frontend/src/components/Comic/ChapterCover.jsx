@@ -69,7 +69,7 @@ const ChapterCover = ({
 
           <div className="relative flex items-center md:justify-center">
             <img src={ContinuedBg} alt="continue" className="absolute hidden md:block" />
-            <img src={ContinuedSmBg} alt="continue" className="absolute w-[12rem] md:hidden" />
+            <img src={ContinuedSmBg} alt="continue" className="absolute h-[100px] w-[120px] md:hidden" />
 
             {/* Wrap the text and download link in a flex container with gap */}
             <div className="flex items-center gap-6 pl-5 sm:flex-col md:gap-4 md:pl-0">
@@ -81,13 +81,13 @@ const ChapterCover = ({
               {/* Show in a column layout on small screens */}
               <div className="mt-4 block flex flex-col items-center justify-between gap-4 sm:hidden">
                 <a
-                  className="flex w-full flex-row flex-wrap items-center justify-between"
+                  className="flex w-full flex-row mr-9 md:mr-0  items-center justify-between"
                   href={downloadPDFPath}
                   download={downloadPDFPath}
                 >
                   <div>
                     <p
-                      className="black-shadow text-center font-gluten text-xs font-black text-[#039898] sm:text-lg"
+                      className="black-shadow  text-center font-gluten text-xs font-black text-[#039898] sm:text-lg"
                       style={{ lineHeight: '5px' }}
                     >
                       DOWNLOAD
@@ -96,7 +96,7 @@ const ChapterCover = ({
                       THIS STORY
                     </p>
                   </div>
-                  <img src={arrowdownload} alt="Download arrow" className="ml-2 h-14 w-14" />
+                  <img src={arrowdownload} alt="Download arrow" className="ml-2 h-10 w-10 md:h-14 md:h-14" />
                 </a>
               </div>
             </div>

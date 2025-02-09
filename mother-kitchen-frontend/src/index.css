@@ -1,9 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@400;500;600;700;800;900&family=Lexend+Peta:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 * {
   scroll-behavior: smooth;
+}
+/* Custom scrollbar */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: #039860;
+  border-radius: 4px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }
 
 body {

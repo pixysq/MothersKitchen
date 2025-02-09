@@ -13,20 +13,22 @@ const Living = () => {
           Coming Soon
         </h2>
         <img src={magzine} alt="living image" className="md:pl-40 md:pr-40" />
-        <p className="text-center font-lexend font-semibold " style={{lineHeight:'18px'}}>
+        <p className="text-center font-lexend font-semibold md:pl-20 md:pl-20 " style={{ lineHeight: '18px' }}>
           MK Living: Your guide to designing a life you don’t need a vacation from. Bite-sized tips, actionable
           insights, and fresh perspectives to help you live fully, work smart, and find joy in every moment.
         </p>
       </BorderDiv>
 
       {/* heading */}
-      <h2 className="mt-10 text-center font-gluten text-3xl font-semibold" style={{ color: '#5B3202' }}>
+      <h2 className="mt-10 text-center font-gluten text-2xl font-bold md:text-3xl" style={{ color: '#5B3202' }}>
         Got a golden secret?
       </h2>
-      <h2 className="text-center font-gluten text-3xl font-semibold text-white">
+      <h2 className="text-center font-gluten text-2xl font-bold text-white md:text-3xl">
         Share your recipes, gardening tips, or lifestyle
       </h2>
-      <h2 className="text-center font-gluten text-3xl font-semibold text-white">hacks and inspire others to shine!</h2>
+      <h2 className="text-center font-gluten  text-2xl font-bold text-white md:text-3xl">
+        hacks and inspire others to shine!
+      </h2>
 
       {/* form */}
       <BorderDiv className="mt-10 flex flex-col items-center justify-around gap-4 bg-[#FEF5CE] p-6 md:flex-row">

@@ -81,25 +81,22 @@ const RecipeCard = ({ number, image, title, subtitle, ingredients, instructions,
               <div className="sm:ml-6 lg:ml-12">
                 {/* Title */}
                 <h2
-                  className="mb-4 font-jua text-3xl font-bold sm:text-left sm:text-4xl md:text-center lg:text-5xl"
+                  className="mb-4 font-jua text-3xl  sm:text-left sm:text-4xl  lg:text-5xl"
                   style={{ color: colors.title }}
                 >
                   {title}
                 </h2>
 
-                <h2
-                  className="mb-4 font-jua text-2xl font-bold sm:text-left sm:text-3xl md:text-center"
-                  style={{ color: colors.subtitle }}
-                >
+                <h2 className="mb-4 font-jua text-2xl  sm:text-left sm:text-3xl " style={{ color: colors.subtitle }}>
                   {subtitle}
                 </h2>
 
                 {/* Ingredients Section */}
                 <h3
-                  className="mb-2 mt-4 font-jua text-2xl font-semibold text-gray-700 sm:text-3xl"
+                  className="mb-2 mt-4 font-jua text-2xl  text-gray-700 sm:text-3xl"
                   style={{ color: colors.ingredientsTitle }}
                 >
-                  Ingredients
+                  INGREDIENTS:
                 </h3>
                 <div className="mb-6 pl-6 font-lexend text-sm sm:text-base">
                   {renderList(ingredients, colors.ingredients)}
@@ -109,10 +106,10 @@ const RecipeCard = ({ number, image, title, subtitle, ingredients, instructions,
 
             {/* Instructions Section */}
             <h3
-              className="mb-2 font-jua text-2xl font-semibold text-gray-700 sm:text-3xl"
+              className="mb-2 font-jua text-2xl  text-gray-700 sm:text-3xl"
               style={{ color: colors.instructionsTitle }}
             >
-              Instructions
+              INSTRUCTIONS
             </h3>
             <div className="list-disc pl-6 font-lexend text-sm sm:text-base">
               {renderList(instructions, colors.instructions)}

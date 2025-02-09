@@ -5,14 +5,23 @@ const Empowerment = () => {
   return (
     <>
       <div
-        className="m-4 rounded-2xl border-black sm:m-6 md:m-8 lg:m-10 xl:m-12"
-        style={{ border: '10px solid black', backgroundColor: '#FCAF0B' }}
+        className="m-4   border-black sm:m-6 md:m-8 lg:m-10 xl:m-12"
+        style={{
+          borderStyle: 'solid',
+          borderColor: 'black',
+          borderTopWidth: '10px',
+          borderLeftWidth: '10px',
+          borderRightWidth: '18px',
+          borderBottomWidth: '18px',
+          borderRadius: '22px',
+          backgroundColor: '#FCAF0B',
+        }}
       >
-        <div className="rounded-2xl p-4 sm:p-6 md:p-8" style={{ border: '5px solid white' }}>
+        <div className="rounded-2xl p-4 sm:p-6 md:p-8" style={{ border: '5px solid white',overflow:'hidden' }}>
           {/* Heading 1 */}
-          <div className="text-center font-gluten text-3xl font-bold sm:text-4xl md:text-5xl">
+          <div className="text-center font-gluten text-2xl md:text-3xl font-bold sm:text-4xl md:text-5xl">
             <p style={{ color: '#171717' }}>Empowerment and</p>
-            <p style={{ color: '#A11506' }}>Sustainability</p>
+            <p  style={{ color: '#A11506' }}>Sustainability</p>
           </div>
 
           {/* Description 1 */}
@@ -25,11 +34,14 @@ const Empowerment = () => {
           {/* Heading 2 */}
           <div className="mt-8 text-center font-gluten text-3xl font-bold sm:text-4xl md:text-5xl">
             <p className="flex items-center justify-center text-center" style={{ color: '#171717' }}>
-              <img src={leftMark} className="mx-2 h-4 sm:h-6 md:h-8" alt="Left mark" />
+              <img src={leftMark} className="mb-10 hidden md:block md:w-10" alt="Left mark" />
               Bringing Turmeric
-              <img src={rightMark} className="mx-2 h-4 sm:h-6 md:h-8" alt="Right mark" />
+              <img src={rightMark} className="mb-10 hidden md:block md:w-10" alt="Right mark" />
             </p>
-            <p style={{ color: '#A11506' }}>to You</p>
+
+            <p className="md:-mt-4" style={{ color: '#A11506' }}>
+              to You
+            </p>
           </div>
 
           {/* Description 2 */}

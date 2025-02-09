@@ -21,11 +21,11 @@ const Hero = () => {
           </p>
 
           <p
-            className="flex items-end justify-center font-gluten text-xl font-bold md:text-4xl lg:text-4xl"
+            className="flex items-end justify-center font-gluten text-xl font-bold md:text-4xl lg:text-6xl"
             style={{ color: '#BF6432' }}
           >
-            <img src={turmericLeft} alt="turmeric left" />
-            Turmeric Powder <img src={turmericRight} alt="turmeric right" />
+            <img src={turmericLeft} alt="turmeric left" className="mb-4 " />
+            Turmeric Powder <img src={turmericRight} alt="turmeric right" className="mb-4 w-10" />
           </p>
           <p className="mt-3 font-lexend text-sm md:text-sm lg:text-lg" style={{ color: '#000000' }}>
             In the lush landscapes of the Sundarbans, where the land meets the sea and the air is filled with the

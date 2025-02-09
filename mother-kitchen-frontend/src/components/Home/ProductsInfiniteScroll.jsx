@@ -23,38 +23,38 @@ const scrollData = [
     image: eggfreeImg,
     text: 'Egg Free',
   },
-  {
-    image: WholesomeImg,
-    text: 'Wholesome',
-  },
-  {
-    image: AdorableMealsImg,
-    text: 'Adorable meals',
-  },
-  {
-    image: FamilyFlavoursImg,
-    text: 'Family flavors',
-  },
-  {
-    image: Nutrious,
-    text: 'Nutrious',
-  },
-  {
-    image: WholesomeImg,
-    text: 'Wholesome',
-  },
-  {
-    image: HomeCraftedImg,
-    text: 'Home crafted',
-  },
-  {
-    image: AdorableMealsImg,
-    text: 'Adorable meals',
-  },
-  {
-    image: FamilyFlavoursImg,
-    text: 'Family flavors',
-  },
+  // {
+  //   image: WholesomeImg,
+  //   text: 'Wholesome',
+  // },
+  // {
+  //   image: AdorableMealsImg,
+  //   text: 'Adorable meals',
+  // },
+  // {
+  //   image: FamilyFlavoursImg,
+  //   text: 'Family flavors',
+  // },
+  // {
+  //   image: Nutrious,
+  //   text: 'Nutrious',
+  // },
+  // {
+  //   image: WholesomeImg,
+  //   text: 'Wholesome',
+  // },
+  // {
+  //   image: HomeCraftedImg,
+  //   text: 'Home crafted',
+  // },
+  // {
+  //   image: AdorableMealsImg,
+  //   text: 'Adorable meals',
+  // },
+  // {
+  //   image: FamilyFlavoursImg,
+  //   text: 'Family flavors',
+  // },
 ]
 
 const ProductsInfiniteScroll = () => {

@@ -1,4 +1,6 @@
 import { useRef } from 'react'
+import kajuPista from '../../assets/home/kajuPista.png'
+import attaBiscuit from '../../assets/home/attaBiscuit.png'
 import {
   ProductItemSm1,
   ProductItemSm2,
@@ -93,14 +95,14 @@ const productsData = [
     icon: ginger,
   },
   {
-    image: product1,
+    image: attaBiscuit,
     price1: 'INR',
     price2: '379',
     quantity: '300gm',
     title: 'Atta Biscuit',
     desc: 'Baked Delight',
     btnText: 'Buy Now',
-    color: 'bg-green-500',
+    color: '#FD8CAA',
     icon: '',
   },
   {
@@ -208,7 +210,7 @@ const productsData = [
     icon: '',
   },
   {
-    image: m,
+    image: kajuPista,
     price1: 'INR',
     price2: '379',
     price3: '',

@@ -13,11 +13,11 @@ const SmallScreenContent = (
     <BorderDiv className="overflow-hidden">
       <div className="flex flex-col items-center justify-center p-4 pt-12 " style={backgroundStyle}>
         <img src={logo} alt="Logo" className="w-1/2 text-center" />
-        <h2 className=" black-shadow white-stroke  my-8 text-center font-gluten text-3xl font-black md:my-20 md:text-5xl">
+        <h2 className="black-shadow white-stroke  text-center  font-gluten text-5xl font-bold text-white">
           Coming Soon
         </h2>
 
-        <img src={smallScreen} alt="Small Screen" />
+        <img src={smallScreen} alt="Small Screen" className="w-full" />
         <p className="text-center font-lexend text-white">
           Introducing MK Beauty London – beauty powered by nature! Our new products are crafted with turmeric, known for
           its natural glow-boosting benefits. Designed to be gentle yet effective, MK London brings you skincare that
@@ -34,7 +34,7 @@ const LargeScreenContent = (
   <div className="hidden p-20 md:flex">
     <BorderDiv className="overflow-hidden ">
       <div className="flex flex-col items-center justify-center p-8 pl-12 pr-12 pt-12 " style={backgroundStyle}>
-        <img src={logo} className="h-auto w-1/12.5" alt="Logo" />
+        <img src={logo} className="w-1/12.5 h-auto" alt="Logo" />
         <h2 className="black-shadow white-stroke  text-center  font-gluten text-6xl font-bold text-white md:my-4 md:text-6xl">
           Coming Soon
         </h2>

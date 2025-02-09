@@ -172,19 +172,19 @@ const DownloadComic = () => {
                 </label>
               </div>
               {/* scroll bar */}
-              <div className="scrollbar-thin scrollbar-thumb-[#039860] max-h-[calc(100vh-400px)] overflow-y-auto pr-6 pt-4">
+              <div className="scrollbar-thin  max-h-[calc(100vh-400px)] overflow-y-auto pr-6 pt-4">
                 {stories.map((story, index) => (
                   <div
                     key={index}
                     className="ml-4 mt-4 flex items-center justify-between border-b"
                     style={{ borderBottomColor: '#FFFFFF5E' }}
                   >
-                    <span>{story.name}</span>
+                    <span className="mb-2">{story.name}</span>
                     <img
                       src={selectedStories.includes(story.name) ? checked : unchecked}
                       alt="checkbox"
                       onClick={() => handleStoryToggle(story.name)}
-                      className="h-6 w-6 cursor-pointer"
+                      className="mb-2 h-6 w-6 cursor-pointer"
                     />
                   </div>
                 ))}
