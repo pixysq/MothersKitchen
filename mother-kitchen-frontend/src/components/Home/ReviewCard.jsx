@@ -21,7 +21,10 @@ const ReviewCard = ({ name, profession, title, desc, bgColor, image }) => {
       <p className=" my-2  text-center text-sm  drop-shadow-md md:text-xl">{name}</p>
       <h5 className="-mt-2 hidden text-center text-sm font-bold md:block md:text-base">{profession}</h5>
       <h3 className=" my-8 px-2 text-center text-sm font-bold drop-shadow-md md:text-xl">{title}</h3>
-      <p className=" my-4  -mt-6  px-4  text-center text-[8px] font-semibold drop-shadow-md md:text-xs">{desc}</p>
+      <p
+        className="my-4 -mt-6 px-4 text-center text-[8px] font-semibold drop-shadow-md md:text-xs"
+        dangerouslySetInnerHTML={{ __html: desc }}
+      />
     </div>
   )
 }

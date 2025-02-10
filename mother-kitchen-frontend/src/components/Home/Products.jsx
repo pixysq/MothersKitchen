@@ -1,4 +1,7 @@
-import { useRef } from 'react'
+import React, { useRef } from 'react'
+import { Slider } from 'infinite-react-carousel'
+
+// Import your assets & components (adjust paths as needed)
 import kajuPista from '../../assets/home/kajuPista.png'
 import attaBiscuit from '../../assets/home/attaBiscuit.png'
 import {
@@ -34,7 +37,8 @@ import {
 import ginger from '../../assets/products/gingerL.png'
 import ProductCard from './ProductCard'
 import ProductsInfiniteScroll from './ProductsInfiniteScroll'
-import { Slider } from 'infinite-react-carousel'
+
+// Product Data
 const productsData = [
   {
     image: a,
@@ -282,19 +286,101 @@ const productsData = [
     icon: '',
   },
 ]
+
+// Custom Next Arrow with inline styling
+const NextArrow = ({ onClick }) => {
+  return (
+    <div
+      onClick={onClick}
+      style={{
+        position: 'absolute',
+        right: '1px', // adjust as needed
+        top: '50%',
+        transform: 'translateY(-50%)',
+        cursor: 'pointer',
+        zIndex: 1000,
+      }}
+    >
+      <svg
+        width="50"
+        height="50"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="black"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M9 18l6-6-6-6" />
+      </svg>
+    </div>
+  )
+}
+
+// Custom Prev Arrow with inline styling
+const PrevArrow = ({ onClick }) => {
+  return (
+    <div
+      onClick={onClick}
+      style={{
+        position: 'absolute',
+        left: '1px', // adjust as needed
+        top: '50%',
+        transform: 'translateY(-50%)',
+        cursor: 'pointer',
+        zIndex: 1000,
+      }}
+    >
+      <svg
+        width="50"
+        height="50"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="black"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="M15 18l-6-6 6-6" />
+      </svg>
+    </div>
+  )
+}
+
+// For small screens
 const ProductsSm = () => {
   return (
-    <div className="w-screen overflow-clip pb-14">
-      <section className="py-5 md:py-24">
-        <div className="flex items-center justify-center">
-          <img loading="lazy" src={ProductsHeading} alt="heading" className="absolute -z-20 h-14" />
-          <h3 className="text-center font-gluten text-xl font-bold text-red-base">
-            &quot;<span className="text-[#553500]"> TOP-</span>rated by taste buds &quot;
+    <div style={{ width: '100vw', overflow: 'hidden', paddingBottom: '56px' }}>
+      <section style={{ padding: '20px 0' }}>
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            position: 'relative',
+          }}
+        >
+          <img
+            loading="lazy"
+            src={ProductsHeading}
+            alt="heading"
+            style={{ position: 'absolute', zIndex: -1, height: '56px' }}
+          />
+          <h3
+            style={{
+              textAlign: 'center',
+              fontFamily: 'Gluten, sans-serif',
+              fontSize: '1.25rem',
+              fontWeight: 'bold',
+              color: '#d70000',
+            }}
+          >
+            "<span style={{ color: '#553500' }}> TOP-</span>rated by taste buds"
           </h3>
         </div>
-        <div className="relative pt-10">
-          <div className="products w-full">
-            <Slider centerMode={true} centerPadding={70} shift={70} arrows={false} dots={true}>
+        <div style={{ position: 'relative', paddingTop: '40px' }}>
+          <div style={{ width: '100%' }}>
+            <Slider centerMode={true} centerPadding={70} shift={70} arrows={true} dots={false}>
               {productsData.map((product) => (
                 <ProductCard key={product.title} {...product} />
               ))}
@@ -306,48 +392,86 @@ const ProductsSm = () => {
     </div>
   )
 }
+
+// For large screens
 const ProductsLg = ({ productsRef }) => {
   return (
     <>
-      <section className="pb-24 pt-10 lg:mx-5 2xl:mx-36">
-        <div className="flex items-center justify-center">
-          <img loading="lazy" src={ProductsHeading} alt="heading" className="absolute -z-20 h-24" />
-          <h3 className="text-center font-gluten text-3xl font-bold text-red-base">
-            &quot;<span className="text-[#553500]"> TOP-</span>rated by taste buds &quot;
+      <section style={{ padding: '40px 20px 96px', position: 'relative' }}>
+        <div
+          style={{
+            position: 'relative',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+          }}
+        >
+          <img
+            loading="lazy"
+            src={ProductsHeading}
+            alt="heading"
+            style={{ position: 'absolute', zIndex: -1, height: '96px' }}
+          />
+          <h3
+            style={{
+              textAlign: 'center',
+              fontFamily: 'Gluten, sans-serif',
+              fontSize: '2rem',
+              fontWeight: 'bold',
+              color: '#d70000',
+            }}
+          >
+            "<span style={{ color: '#553500' }}> TOP-</span>rated by taste buds"
           </h3>
         </div>
-        <div className="products relative overflow-x-scroll pt-20 lg:px-10" ref={productsRef}>
-          <Slider slidesToShow={3} dots={true} arrows={true} initialSlide={1} centerPadding={0} centerMode={true}>
+        <div
+          style={{ position: 'relative', paddingTop: '80px', paddingLeft: '40px', paddingRight: '40px' }}
+          ref={productsRef}
+        >
+          <Slider
+            slidesToShow={3}
+            dots={false}
+            arrows={true}
+            nextArrow={<NextArrow />}
+            prevArrow={<PrevArrow />}
+            initialSlide={1}
+            centerPadding={0}
+            centerMode={true}
+          >
             {productsData.map((product) => (
               <ProductCard key={product.title} {...product} />
             ))}
           </Slider>
         </div>
       </section>
-
       <ProductsInfiniteScroll />
     </>
   )
 }
 
 const Products = () => {
-  const productsRef = useRef()
+  const productsRef = useRef(null)
+
   const handleLeftClick = () => {
-    productsRef.current.scrollBy(-380, 0)
+    if (productsRef && productsRef.current) {
+      productsRef.current.scrollBy(-380, 0)
+    }
   }
+
   const handleRightClick = () => {
-    productsRef.current.scrollBy(380, 0)
+    if (productsRef && productsRef.current) {
+      productsRef.current.scrollBy(380, 0)
+    }
   }
 
   return (
     <>
-      <div className="md:hidden ">
-        {/*Small Screen*/}
+      <div className="md:hidden">
+        {/* Small Screen */}
         <ProductsSm productsRef={productsRef} />
       </div>
-
       <div className="hidden md:block">
-        {/*Large Screen*/}
+        {/* Large Screen */}
         <ProductsLg handleLeftClick={handleLeftClick} handleRightClick={handleRightClick} productsRef={productsRef} />
       </div>
     </>
