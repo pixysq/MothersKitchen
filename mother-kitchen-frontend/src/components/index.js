@@ -8,6 +8,7 @@ const LastSection = lazy(() => import('./LastSection'))
 import { TeamInfo } from './Team'
 import Recipes from '../components/Home/recipes'
 import Loader from './Loader'
+import Main from './Daksh/Main'
 export {
   Nutrition,
   Hero,
@@ -21,6 +22,7 @@ export {
   LastSection,
   TeamInfo,
   Loader,
+  Main,
   ContactDetails,
   ContactForm,
   ContactInfo,

@@ -2,6 +2,7 @@ import { GiPaperBagFolded } from 'react-icons/gi'
 import { AiFillHeart } from 'react-icons/ai'
 import { FaArrowRight } from 'react-icons/fa'
 import { Bag } from '../../assets'
+import { Link } from 'react-router-dom'
 const ProductsCardSm = ({ image, price1, price2, price3, quantity, title, desc, btnText, color, gradient }) => {
   return (
     <div
@@ -18,10 +19,10 @@ const ProductsCardSm = ({ image, price1, price2, price3, quantity, title, desc, 
           alt="x"
           className="object-fit transform transition-transform duration-300 hover:translate-y-[-5px]"
         />
-        <div className="absolute right-3 top-3">
+        {/* <div className="absolute right-3 top-3">
           <AiFillHeart className="z-10 h-6 w-6 text-white drop-shadow-lg" />
           <AiFillHeart className="absolute -left-[1.5px] -top-[1.5px] -z-[1] h-7 w-7 text-black drop-shadow-lg" />
-        </div>
+        </div> */}
       </div>
       <div className="flex gap-2 px-1 text-left drop-shadow-sm">
         <div className="flex flex-1 flex-col items-start justify-start">
@@ -29,10 +30,12 @@ const ProductsCardSm = ({ image, price1, price2, price3, quantity, title, desc, 
             {price1} <span className="text-white">{price2}</span> <span>{price3}</span>
           </div>
           <div className="text-[7px] font-semibold">{quantity}</div>
+          <Link to="https://rzp.io/rzp/motherskitchen">
           <button className="mt-3 flex items-center gap-2 overflow-hidden text-ellipsis whitespace-nowrap rounded-md border-2 border-b-4 border-r-4 border-black bg-[#039860] px-3 py-1 font-gluten text-white">
             <span className="text-xs">{btnText}</span>
             <img src={Bag} alt="bag" className="h-4 w-4 object-contain" />
           </button>
+          </Link>
         </div>
         <div className="flex flex-1 flex-col overflow-hidden">
           <h3 className="overflow-hidden text-ellipsis text-[10px] font-bold leading-3 tracking-tighter">{title}</h3>
@@ -59,17 +62,17 @@ const ProductsCardMd = ({ image, price1, price2, price3, quantity, title, desc, 
           className="w-[150px] max-w-full object-contain drop-shadow-lg md:w-[150px]"
         />
 
-        <div className="absolute right-4 top-4">
+        {/* <div className="absolute right-4 top-4">
           <AiFillHeart className="text-white-500 z-10 h-8 w-8 drop-shadow-lg" />
           <AiFillHeart className="absolute -left-[1.5px] -top-[1.5px] -z-[1] h-9 w-9 text-black drop-shadow-lg" />
-        </div>
+        </div> */}
 
         {/* Ensure no text is inside this div */}
         <div className="pointer-events-none absolute inset-0 text-transparent" />
       </div>
 
       {/* Text Container */}
-      <div className="flex gap-4 mt-2 px-1 drop-shadow-sm">
+      <div className="mt-2 flex gap-4 px-1 drop-shadow-sm">
         <div className="flex-1">
           {/* Price and Quantity */}
           <div className="flex overflow-hidden text-ellipsis text-[12px] font-bold text-white">
@@ -78,9 +81,12 @@ const ProductsCardMd = ({ image, price1, price2, price3, quantity, title, desc, 
           <div className="text-[8px]">{quantity}</div>
 
           {/* Button */}
-          <button className="mt-3 flex items-center justify-between rounded-lg border-2 border-b-4 border-r-4 border-black bg-[#039860] px-3 py-1 font-gluten text-white">
-            <span className="text-xs">{btnText}</span> <GiPaperBagFolded />
-          </button>
+          <Link to="https://rzp.io/rzp/motherskitchen">
+            {' '}
+            <button className="mt-3 flex items-center justify-between rounded-lg border-2 border-b-4 border-r-4 border-black bg-[#039860] px-3 py-1 font-gluten text-white">
+              <span className="text-xs">{btnText}</span> <GiPaperBagFolded />
+            </button>
+          </Link>
         </div>
 
         {/* Title and Description */}
@@ -111,10 +117,10 @@ const ProductsCardLg = ({ image, price1, price2, price3, quantity, title, desc, 
           alt="x"
           className="w-full transform object-contain object-top drop-shadow-2xl transition-transform duration-300 hover:translate-y-[-5px]"
         />
-        <div className="absolute right-4 top-4">
+        {/* <div className="absolute right-4 top-4">
           <AiFillHeart className="z-10 h-8 w-8 text-white drop-shadow-lg" />
           <AiFillHeart className="absolute -left-[1.5px] -top-[1.5px] -z-[1] h-9 w-9 text-black drop-shadow-lg" />
-        </div>
+        </div> */}
       </div>
       <div className="mt-3 flex gap-5 px-1 drop-shadow-sm">
         <div className="flex-1">
@@ -122,10 +128,12 @@ const ProductsCardLg = ({ image, price1, price2, price3, quantity, title, desc, 
             {price1} <span className="text-white">{price2}</span> <span>{price3}</span>
           </div>
           <div className="text-[8px] font-medium">{quantity}</div>
-          <button className="mt-3 flex items-center gap-2 overflow-hidden text-ellipsis whitespace-nowrap rounded-md border-2 border-b-4 border-r-4 border-black bg-[#039860] px-3 py-1 font-gluten text-white">
-            <span className="black-shadow-sm">{btnText}</span>
-            <img src={Bag} alt="bag" className="h-4 w-4 object-contain" />
-          </button>
+          <Link to="https://rzp.io/rzp/motherskitchen">
+            <button className="mt-3 flex items-center gap-2 overflow-hidden text-ellipsis whitespace-nowrap rounded-md border-2 border-b-4 border-r-4 border-black bg-[#039860] px-3 py-1 font-gluten text-white">
+              <span className="black-shadow-sm">{btnText}</span>
+              <img src={Bag} alt="bag" className="h-4 w-4 object-contain" />
+            </button>
+          </Link>
         </div>
         <div className="relative flex-1">
           <h3 className="text-[14px] font-bold leading-4 tracking-[-0.1em]">{title}</h3>

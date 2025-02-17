@@ -18,6 +18,8 @@ import nitin from '../../assets/home/nitin.png'
 import sv from '../../assets/home/sv.png'
 import bhavana from '../../assets/home/bhavana.png'
 import ReviewCard from './ReviewCard'
+import anil from '../../assets/home/anil.png'
+import pawan from '../../assets/home/pawan.png'
 import Slider from 'infinite-react-carousel'
 
 const reviews1 = [
@@ -88,12 +90,20 @@ const reviews1 = [
 ]
 const reviews2 = [
   {
+    title: 'Enjoying your Atta cookies',
+    desc: "Just received this box of Atta cookies from Mother's Kitchen and I have to say they have a way to reach a person's heart..With a perfect crunch and So many health benefits Mother's Kitchen Atta cookies are my new favourites...Definitely gonna order more!Munching a cookie while I type",
+    name: 'Bhavana Aggarwal',
+    profession: 'Country Head HPE, Co-founder OYO group',
+    bgColor: 'bg-[#609ECB]',
+    image: bhavana,
+  },
+  {
     title: "Enjoying your sweets from Mother's Kitchen",
     desc: "I received a Mother's Kitchen Gift Pack filled with cookies and sweets, and though I hesitated at first, my fitness coach helped me find a balance. The kids eagerly finished the rest, pointing out the charming drawings of kids marching on the beautifully designed box. Mother's Kitchen products bring back childhood flavors with a modern twist, from their Pistachio and Coconut cookies to Rose Dry-Fruit bars. I even discovered guilt-free treats on their website. Highly recommended!",
     name: 'Anil Bahuman',
     profession: 'Vice President, Jio Platforms Ltd.',
     bgColor: 'bg-[#EFD23D]',
-    image: nitin,
+    image: anil,
   },
   {
     title: "Enjoying your sweets from Mother's Kitchen",
@@ -101,7 +111,7 @@ const reviews2 = [
     name: 'Dr. Pawan Agrawal',
     profession: 'Founder, Dabba Wala Mumbai',
     bgColor: 'bg-[#EF3D69]',
-    image: nitin,
+    image: pawan,
   },
   // {
   //   title: "Enjoying your sweets from Mother's Kitchen Gift Pack ",
@@ -110,14 +120,6 @@ const reviews2 = [
   //   profession: 'Head international Business,Daimler India Commercial Vehicles',
   //   bgColor: 'bg-[#6FAD94]',
   //   image: sv,
-  // },
-  // {
-  //   title: 'Enjoying your Atta cookies',
-  //   desc: "Just received this box of Atta cookies from Mother's Kitchen and I have to say they have a way to reach a person's heart..With a perfect crunch and So many health benefits Mother's Kitchen Atta cookies are my new favourites...Definitely gonna order more!Munching a cookie while I type",
-  //   name: 'Bhavana Aggarwal',
-  //   profession: 'Country Head HPE, Co-founder OYO group',
-  //   bgColor: 'bg-[#609ECB]',
-  //   image: bhavana,
   // },
   // {
   //   title: 'I love these little taste bombs',
@@ -162,7 +164,6 @@ const reviews2 = [
 ]
 
 const ReviewsSm = () => {
-  const reviews = [...review1, ...review2]
   return (
     <section>
       <div className="flex items-center justify-center">
@@ -187,35 +188,48 @@ const ReviewsSm = () => {
   )
 }
 const ReviewsLg = () => {
+  const upperReviews = useRef()
+  const lowerReviews = useRef()
+
+  const getScrollOffset = () => {
+    upperReviews.current.style.transform = `translateX(${window.pageYOffset.toFixed(1) / 5}px)`
+    lowerReviews.current.style.transform = `translateX(-${window.pageYOffset.toFixed(1) / 5}px)`
+    upperReviews.current.style.transition = ' all 0.4s'
+    lowerReviews.current.style.transition = ' all 0.4s'
+  }
+  useEffect(() => {
+    window.addEventListener('scroll', getScrollOffset, { passive: true })
+    return () => window.removeEventListener('scroll', getScrollOffset, { passive: true })
+  }, [])
   return (
     <section>
-      <div className="flex items-center justify-center">
-        <img loading="lazy" src={ReviewHeading} alt="Review Heading" className="w-[90%] xl:w-[70%]" />
+      <div className=" flex items-center justify-center">
+        <img loading="lazy" src={ReviewHeading} alt="ax" className="w-[90%] xl:w-[70%]" />
       </div>
       <div className="relative">
         <img
           loading="lazy"
           src={reviewBg}
-          alt="Review Background"
+          alt="reviewbg"
           className="absolute top-20 -z-20 h-[80vh] scale-125 object-cover md:h-[200vh]"
         />
       </div>
       <div className="relative mt-10 md:mt-0">
-        {/* Upper Reviews */}
-        <div className="flex justify-center">
-          <div className="flex select-none gap-10 overflow-hidden px-10 pb-20 md:pt-28">
-            {reviews1.map((review, idx) => (
-              <ReviewCard {...review} key={review.name + idx} />
-            ))}
-          </div>
+        <div
+          className={`relative -left-[80vw] flex w-max select-none gap-10 overflow-hidden px-10 pb-20 md:pt-28 xl:-left-[65vw] 2xl:-left-[50vw] [&>*:nth-child(odd)]:translate-y-20`}
+          ref={upperReviews}
+        >
+          {reviews1.map((review, idx) => (
+            <ReviewCard {...review} key={review.name + idx} />
+          ))}
         </div>
-        {/* Lower Reviews */}
-        <div className="flex justify-center">
-          <div className="flex select-none gap-10 overflow-hidden px-10 pb-20 pt-5 md:flex md:gap-10">
-            {reviews2.map((review, idx) => (
-              <ReviewCard {...review} key={review.name + idx} />
-            ))}
-          </div>
+        <div
+          className="relative -left-[-40vw] hidden w-max select-none gap-5 overflow-hidden px-10 pb-20 pt-5 md:flex md:gap-10 [&>*:nth-child(odd)]:translate-y-20 "
+          ref={lowerReviews}
+        >
+          {reviews2.map((review, idx) => (
+            <ReviewCard {...review} key={review.name + idx} />
+          ))}
         </div>
       </div>
     </section>
@@ -234,4 +248,5 @@ const Reviews = () => {
     </>
   )
 }
+
 export default Reviews

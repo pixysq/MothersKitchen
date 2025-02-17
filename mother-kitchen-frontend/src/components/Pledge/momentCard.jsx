@@ -10,7 +10,7 @@ const Moments = () => {
           className={`flex flex-col items-center gap-6 md:flex-row ${index % 2 === 0 ? 'md:flex-row-reverse' : ''}`}
         >
           {/* Mobile-only title */}
-          <h2 className="w-full text-center font-gluten text-3xl font-bold md:hidden" style={{ color: '#171717' }}>
+          <h2 className="w-full  font-gluten text-3xl font-bold md:hidden" style={{ color: '#171717' }}>
             {moment.title1} <span style={{ color: `${moment.title2Color}` }}>{moment.title2}</span>
           </h2>
 

@@ -11,4 +11,5 @@ import Awards from './Awards'
 import Pledge from './Pledge'
 import Beauty from '../components/Beauty/beauty'
 import Living from '../components/Living/living'
-export { Home, About, Team, Brands, Comic, MkCafe, Contact, NotFound, Recipes, Awards, Pledge, Beauty,Living }
+import Daksh from './Daksh'
+export { Home, About, Team, Brands, Comic, MkCafe, Contact, NotFound, Recipes, Awards, Pledge, Beauty,Living,Daksh }

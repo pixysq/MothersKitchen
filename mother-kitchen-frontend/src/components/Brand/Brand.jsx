@@ -59,12 +59,14 @@ const Brand = () => {
             />
           </Link>
 
-          <ImageBox
-            image={img6}
-            className="max-w-full overflow-hidden object-contain !p-2 sm:!p-3 md:px-6"
-            clickable={true}
-            boxClassName="!h-[100px] !w-[100px] sm:!h-[120px] sm:!w-[120px] md:!h-[160px] md:!w-[160px] lg:!h-[200px] lg:!w-[200px] bg-[#FFFFFE]"
-          />
+          <Link to="/daksh">
+            <ImageBox
+              image={img6}
+              className="max-w-full overflow-hidden object-contain !p-2 sm:!p-3 md:px-6"
+              clickable={true}
+              boxClassName="!h-[100px] !w-[100px] sm:!h-[120px] sm:!w-[120px] md:!h-[160px] md:!w-[160px] lg:!h-[200px] lg:!w-[200px] bg-[#FFFFFE]"
+            />
+          </Link>
 
           <Link to="/comic" onClick={() => scroll(0, 0)}>
             <ImageBox
@@ -114,7 +116,7 @@ const Brand = () => {
               image={img3}
               className="max-w-full overflow-hidden object-contain !p-1"
               clickable={true}
-              boxClassName="h-[80px] w-[80px] bg-[#244238]"
+              boxClassName="h-[100px] w-[100px] bg-[#244238]"
             />
           </Link>
 
@@ -123,7 +125,7 @@ const Brand = () => {
               image={img4}
               className="max-w-full overflow-hidden object-contain !p-1"
               clickable={true}
-              boxClassName="h-[80px] w-[80px] bg-[#F5D09E]"
+              boxClassName="h-[100px] w-[100px] bg-[#F5D09E]"
             />
           </Link>
 
@@ -132,7 +134,7 @@ const Brand = () => {
               image={img1}
               className="max-w-full overflow-hidden object-contain !p-1"
               clickable={true}
-              boxClassName="h-[80px] w-[80px] bg-[#0F1C1A]"
+              boxClassName="h-[100px] w-[100px] bg-[#0F1C1A]"
             />
           </Link>
 
@@ -141,23 +143,24 @@ const Brand = () => {
               image={img5}
               className="max-w-full overflow-hidden object-contain !p-1"
               clickable={true}
-              boxClassName="h-[80px] w-[80px] bg-[#FFFFFE]"
+              boxClassName="h-[100px] w-[100px] bg-[#FFFFFE]"
             />
           </Link>
-
-          <ImageBox
-            image={img6}
-            className="max-w-full overflow-hidden object-contain !p-1"
-            clickable={true}
-            boxClassName="h-[80px] w-[80px] bg-[#FFFFFE]"
-          />
+          <Link to="/daksh" onClick={() => scroll(0, 0)}>
+            <ImageBox
+              image={img6}
+              className="max-w-full overflow-hidden object-contain !p-1"
+              clickable={true}
+              boxClassName="h-[100px] w-[100px] bg-[#FFFFFE]"
+            />
+          </Link>
 
           <Link to="/comic" onClick={() => scroll(0, 0)}>
             <ImageBox
               image={img2}
               className="max-w-full overflow-hidden object-contain !p-1"
               clickable={true}
-              boxClassName="h-[80px] w-[80px] bg-[#FFFFFE]"
+              boxClassName="h-[100px] w-[100px] bg-[#FFFFFE]"
             />
           </Link>
 
@@ -166,7 +169,7 @@ const Brand = () => {
               image={Brand7}
               className="max-w-full overflow-hidden object-cover !p-0.5"
               clickable={true}
-              boxClassName="h-[80px] w-[80px]"
+              boxClassName="h-[100px] w-[100px]"
               style={{
                 background: 'radial-gradient(67.68% 67.56% at 50.21% 50%, #F8AFAE 0%, #F4ADB1 34.4%, #EF8383 74.9%)',
               }}
@@ -178,7 +181,7 @@ const Brand = () => {
               image={Brand6}
               className="max-w-full overflow-hidden object-contain !p-1"
               clickable={true}
-              boxClassName="h-[80px] w-[80px] bg-[#FFDEC7] text-black"
+              boxClassName="h-[100px] w-[100px] bg-[#FFDEC7] text-black"
             />
           </Link>
         </div>

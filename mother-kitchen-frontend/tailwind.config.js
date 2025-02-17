@@ -21,6 +21,8 @@ export default {
       lexend: ['Lexend Peta'],
       gluten: ['Gluten'],
       jua: ['Jua'],
+      inter: ['Inter'],
+      notoSerif: ['Noto Serif'],
     },
   },
   plugins: [],

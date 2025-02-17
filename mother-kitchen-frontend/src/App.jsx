@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom'
+import { Route, Routes, useLocation } from 'react-router-dom'
 import {
   About,
   Brands,
@@ -13,15 +13,19 @@ import {
   Pledge,
   Beauty,
   Living,
+  Daksh,
 } from './pages'
 import { Footer, Loader, Navbar } from './components'
 import { Suspense } from 'react'
 
 const App = () => {
+  const location = useLocation();
+  const hideNavAndFooter = location.pathname === "/daksh"; 
+
   return (
     <>
       <Suspense fallback={<Loader />}>
-        <Navbar />
+        {!hideNavAndFooter && <Navbar />}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -35,9 +39,10 @@ const App = () => {
           <Route path="/awards" element={<Awards />} />
           <Route path="/beauty" element={<Beauty />} />
           <Route path="/living" element={<Living />} />
+          <Route path="/daksh" element={<Daksh />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-        <Footer />
+        {!hideNavAndFooter && <Footer />}
       </Suspense>
     </>
   )
