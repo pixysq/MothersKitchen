@@ -69,12 +69,12 @@ import review8 from './reviews/anil.png'
 import review9 from './reviews/zain.png'
 import reviewBg from './reviews/review_bg.webp'
 
-import product1 from './products/product1.webp'
-import product2 from './products/product2.webp'
-import product3 from './products/product3.webp'
-import product4 from './products/product4.webp'
-import product5 from './products/product5.webp'
-import product6 from './products/product6.webp'
+import product1 from './products/product1.png'
+import product2 from './products/product2.png'
+import product3 from './products/product3.png'
+import product4 from './products/product4.png'
+import product5 from './products/product5.png'
+import product6 from './products/product6.png'
 
 import kitchen1 from './kitchen/kitchencard1.webp'
 import kitchen2 from './kitchen/kitchencard2.webp'
@@ -96,23 +96,25 @@ import InfoImg3 from './discover/info3.webp'
 import NumberBg from './discover/numbers.webp'
 
 import TeamHeading from './team_heading.webp'
-import Shivani from './team/shivani.jpg'
+import Shivani from './team/Shivani.png'
 import Sunil from './team/sunil.webp'
-import bhavna from './team/bhavna.webp'
-import joshua from './team/joshua.webp'
-import mrunalini from './team/mrunalini.webp'
-import shrikumar from './team/shrikumar.webp'
-import stuart from './team/stuart.webp'
-import shifali from './team/shifali.webp'
-import satyam from './team/satyam.webp'
+import bhavna from './team/bhavna.png'
+import joshua from './team/joshua.png'
+import mrunalini from './team/mrunalini.png'
+import shrikumar from './team/shrikumar.png'
+import stuart from './team/stuart.png'
+import shifali from './team/shifali.png'
+import satyam from './team/satyam.png'
 import rohit from './team/rohit.png'
+import abhishek from './team/Abhishek.png'
 
 import Brand1 from './brands/brand1.webp'
 import Brand2 from './brands/brand2.webp'
-import Brand3 from './brands/brand3.webp'
+import Brand3 from './brands/brand3.png'
 import Brand4 from './brands/brand4.webp'
 import Brand5 from './brands/brand5.webp'
-import Brand6 from './brands/brand6.webp'
+import Brand6 from './brands/brand6.png'
+import Brand7 from './brands/brand7.png'
 
 import InayatHeadingImg from './comics/inayat.png'
 import MummyHeadingImg from './comics/mummy.png'
@@ -134,6 +136,34 @@ import BigBlackCookie from './contact/big-cookie-black.webp'
 
 import ThanksImg from './thanks.webp'
 import NavSmall from './nav-sm.webp'
+import antioxident from './home/antioxidentIcon.png'
+import medicinal from './home/medicinalIcon.png'
+import rich from './home/richIcon.png'
+import preservative from './home/preservativeIcon.png'
+import crepe from './home/crepeRecipe.png'
+import haldiMilk from './home/haldiMilkRecipe.png'
+import bread  from './home/breadRecipe.png'
+import springRoll from './home/springRollRecipe.png'
+import a from './products/a.png'
+import b from './products/b.png'
+import c from './products/c.png'
+import d from './products/d.png'
+import e from './products/e.png'
+import f from './products/f.png'
+import g from './products/g.png'
+import i from './products/i.png'
+import j from './products/j.png'
+import k from './products/k.png'
+import l from './products/l.png'
+import m from './products/m.png'
+import n from './products/n.png'
+import o from './products/o.png'
+import p from './products/p.png'
+import q from './products/q.png'
+import r from './products/r.png'
+import s from './products/s.png'
+import t from './products/t.png'
+
 export {
   TextLogo,
   PaperPlane,
@@ -213,6 +243,7 @@ export {
   joshua,
   satyam,
   stuart,
+  abhishek,
   shrikumar,
   shifali,
   mrunalini,
@@ -244,6 +275,7 @@ export {
   Brand4,
   Brand5,
   Brand6,
+  Brand7,
   HHRightMobile,
   ScrollDown,
   MissionBgPhone,
@@ -258,4 +290,31 @@ export {
   review9,
   InayatHeadingImg,
   MummyHeadingImg,
+  antioxident,
+  preservative,
+  rich,
+  medicinal,
+  springRoll,
+  crepe,
+  haldiMilk,
+  bread,
+  a,
+  b,
+  c,
+  d,
+  e,
+  f,
+  g,
+  i,
+  j,
+  k,
+  l,
+  m,
+  n,
+  o,
+  p,
+  q,
+  r,
+  s,
+  t,
 }

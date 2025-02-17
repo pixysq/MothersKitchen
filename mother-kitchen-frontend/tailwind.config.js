@@ -20,6 +20,9 @@ export default {
     fontFamily: {
       lexend: ['Lexend Peta'],
       gluten: ['Gluten'],
+      jua: ['Jua'],
+      inter: ['Inter'],
+      notoSerif: ['Noto Serif'],
     },
   },
   plugins: [],

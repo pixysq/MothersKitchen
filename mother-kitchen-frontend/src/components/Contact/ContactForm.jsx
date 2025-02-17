@@ -5,7 +5,6 @@ const ContactForm = () => {
   const { isOpen, openModal, closeModal } = useModal()
   return (
     <div className="relative mt-20 rounded-3xl border-4 border-b-[12px] border-r-[12px] border-black bg-[#FEF5CE] px-7 pb-10 pt-10 md:pt-14">
-      <img src={Bird} alt="bird" className="absolute -right-10 -top-32 hidden w-40 md:block" />
       <div className="grid grid-cols-1 font-lexend md:grid-cols-2 ">
         <div className="pb-10 md:hidden">
           <img src={ContactFormImg} alt="img" className="w-full" />

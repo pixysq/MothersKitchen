@@ -17,15 +17,16 @@ const AboutHero = () => {
             alt="logo"
             className="absolute left-10 top-10 hidden md:block md:w-[100px] lg:w-[150px]"
           />
+
           <div className=" flex w-full flex-col justify-center md:flex-row">
             <img src={AboutIntroBg} alt="about" className="h-full object-contain md:w-[50%]" loading="lazy" />
           </div>
           <div className="relative px-5 pb-5 md:px-10 md:pb-10 lg:px-24">
-            <img src={AboutHeroTextBg} alt="asd" className="hidden h-[300px] w-full lg:block" loading="lazy" />
+            <img src={AboutHeroTextBg} alt="asd" className="hidden h-[220px] w-full  lg:block" loading="lazy" />
             <img
               src={AboutHeroTextBgPhone}
               alt="sdd"
-              className="h-[320px] w-full object-cover md:h-[400px]  lg:hidden"
+              className="h-[75vh] w-full  object-cover   md:h-[350px]  lg:hidden"
             />
             <div className="absolute left-0 top-3 text-center font-lexend text-[10px] font-semibold tracking-tight md:top-10 md:px-20 md:text-sm md:leading-4 lg:top-10 lg:px-40 lg:font-bold">
               <p className="mx-10 rounded-lg bg-[#FFD272] p-2 md:mx-0 md:mt-0 md:rounded-none">

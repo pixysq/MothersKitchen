@@ -1,25 +1,25 @@
-import { Bottle, Drop, FatFree, GirlBadge, Vegan } from '../../assets'
+import { GirlBadge, medicinal, rich, preservative, antioxident } from '../../assets'
 
 const nutritionData = [
   {
-    image: Bottle,
-    text: 'FREE OF',
-    textred: ' ANYTHING ARTIFICIAL',
+    image: antioxident,
+    text: '',
+    textred: 'Antioxidant Rich',
   },
   {
-    image: Drop,
-    text: 'No',
-    textred: ' Preservatives',
+    image: medicinal,
+    text: '',
+    textred: 'High medicinal Value',
   },
   {
-    image: Vegan,
-    text: 'Vegan &',
-    textred: ' Plant based',
+    image: preservative,
+    text: '',
+    textred: 'No Preservatives',
   },
   {
-    image: FatFree,
-    text: 'TRANS ',
-    textred: 'FAT FREE',
+    image: rich,
+    text: '',
+    textred: 'Rich in curcumin ',
   },
 ]
 
@@ -54,7 +54,7 @@ const CircularDiv = ({ image, text, idx, textred }) => {
             : ''
         } `}
       />
-      <p className="mt-1 w-16 break-words text-center font-gluten text-[10px] font-semibold leading-3 md:break-inside-auto md:text-[7px] md:leading-[6px] lg:text-[10px] lg:leading-3">
+      <p className="mt-1 w-18 text-center font-gluten text-[10px] font-semibold leading-3 md:break-inside-auto md:text-[7px] md:leading-[6px] lg:text-[11px] lg:leading-3">
         {text} <span className="text-[#842000]">{textred}</span>
       </p>
     </div>

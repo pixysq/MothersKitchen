@@ -1,6 +1,6 @@
-import { DancingWomen, ProductsHeading } from '../../assets'
+import {  ProductsHeading } from '../../assets'
 import YellowDiv from '../custom/YellowDiv'
-
+import DancingWomen from '../../assets/about/DancingWomen.png'
 const Support = () => {
   return (
     <section className="px-5 md:my-20 md:px-10  2xl:mx-36">

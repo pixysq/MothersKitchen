@@ -1,4 +1,4 @@
-import { Hero, InstagramSection, LastSection, Nutrition, Products, Reviews, Welcome } from '../components'
+import { Hero, InstagramSection, LastSection, Nutrition, Products, Reviews, Welcome, Recipes } from '../components'
 
 const Home = () => {
   return (
@@ -7,9 +7,10 @@ const Home = () => {
       <Nutrition />
       <Products />
       <Welcome />
+      <Recipes />
       <Reviews />
       <InstagramSection />
-      <LastSection elements={['About', 'Comic', 'Contact']} />
+      <LastSection elements={['Comic', 'Brands', 'Contact']} />
     </div>
   )
 }
