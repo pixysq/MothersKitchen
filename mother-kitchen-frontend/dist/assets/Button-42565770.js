@@ -1,0 +1,1 @@
+import{j as o}from"./index-d10894a9.js";const d=({children:r,className:e,onClick:t})=>o.jsx("button",{onClick:t,className:`rounded-full border border-b-2 border-r-2  border-black bg-red-base px-5 pb-1 pt-2 font-gluten text-white duration-300 hover:bg-green-base md:border-b-4 md:border-r-4 ${e||""}`,children:r});export{d as default};
