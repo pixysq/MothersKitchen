@@ -18,13 +18,13 @@ const Main = () => {
       {/* large screen */}
       <div className="hidden bg-[#d7bca6] md:block">
         {/* ḍaksh text */}
-        <div className="absolute left-[500px] top-[70px]  ">
+        <div className="absolute left-[500px] top-[250px] mb-20 ">
           <img src={textLg} style={{ width: '50%' }} />
           <p className="font-notoserif ml-5 mt-2  text-xl font-semibold text-[#231F20]">A WOMEN EMPOWERMENT GROUP</p>
         </div>
 
         {/* founder section */}
-        <div className="absolute left-[50px] top-[300px] flex overflow-hidden ">
+        <div className="absolute left-[50px] top-[300px] flex overflow-hidden mt-80 ">
           <div className="flex flex-col items-center justify-end  ">
             <img src={founder} className=" rounded-full border-8 border-[#951B20]  " style={{ height: '50%' }} />
             <p className="-mb-1 mt-2 font-inter font-bold text-black ">-Founded by</p>
@@ -50,8 +50,9 @@ const Main = () => {
               </p>
 
               <button
-                className="mt-2 rounded-xl bg-[#951B20] font-inter text-lg text-white "
+                className="mt-2 rounded-xl bg-[#951B20] font-inter text-lg text-white"
                 style={{ paddingBottom: '5px', paddingTop: '5px', paddingLeft: '20px', paddingRight: '20px' }}
+                onClick={() => (window.location.href = 'mailto:contactdaksh.org@gmail.com')}
               >
                 CLICK TO JOIN
               </button>
@@ -60,7 +61,7 @@ const Main = () => {
         </div>
 
         {/* contact */}
-        <div className="absolute bottom-4 right-4 flex items-center gap-2 ">
+        <div className="absolute mt-[900px] right-4 flex items-center gap-2 ">
           <p className="font-notoSerif font-semibold text-[#030303] ">+91 93104 11544 &nbsp; &nbsp; +91 70113 61501</p>
           <p className="border-l-2 border-[#030303] p-2 font-notoSerif font-semibold text-[#030303] ">
             contactdaksh.org@gmail.com
@@ -77,7 +78,7 @@ const Main = () => {
           <img src={insta} style={{ height: '25px' }} />
         </div>
         <img src={logoLg} className="absolute ml-[1200px] h-[150px]" />
-        <img src={bgLg} style={{ height: '100vh', width: '100vw' }} />
+        <img src={bgLg} style={{ height: '150vmin', width: '100vw' }} />
       </div>
 
       {/* small screen */}
@@ -97,7 +98,7 @@ const Main = () => {
             <img src={logoSm} alt="Logo" className="absolute right-4 top-0 w-20 md:right-10 md:w-auto" />
 
             {/* Main content */}
-            <img src={dakshTextSm} alt="Daksh Text" className=" md:w-70 mt-[60px] w-3/4" />
+            <img src={dakshTextSm} alt="Daksh Text" className=" md:w-70 mt-[10px] w-3/4" />
             {/* Paragraph placed right after dakshTextSm with a 10px top margin */}
             <p className="mt-[10px] text-center font-semibold text-[#231F20]">A WOMEN EMPOWERMENT GROUP</p>
           </div>

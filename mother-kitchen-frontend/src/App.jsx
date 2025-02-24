@@ -19,13 +19,12 @@ import { Footer, Loader, Navbar } from './components'
 import { Suspense } from 'react'
 
 const App = () => {
-  const location = useLocation();
-  const hideNavAndFooter = location.pathname === "/daksh"; 
+  const location = useLocation()
 
   return (
     <>
       <Suspense fallback={<Loader />}>
-        {!hideNavAndFooter && <Navbar />}
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -42,7 +41,7 @@ const App = () => {
           <Route path="/daksh" element={<Daksh />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-        {!hideNavAndFooter && <Footer />}
+        <Footer />
       </Suspense>
     </>
   )

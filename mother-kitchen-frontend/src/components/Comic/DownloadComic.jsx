@@ -153,7 +153,7 @@ const DownloadComic = () => {
         <div className="rounded-3xl bg-[#358CDD]">
           <div className="rounded-3xl border-[5px] border-white border-opacity-50 p-4">
             <div className="flex items-start justify-between ">
-              <img src={TextLogo} alt="textLogo" width="100px" />
+              <img src={TextLogo} alt="textLogo" width="120px" />
               <button className="rounded-full bg-[#C40D4F] p-2 text-white hover:bg-blue-600" onClick={closeModal}>
                 <RxCross1 />
               </button>

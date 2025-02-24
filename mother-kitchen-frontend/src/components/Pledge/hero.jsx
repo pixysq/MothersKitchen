@@ -8,7 +8,11 @@ const Hero = () => {
       <div className="relative -mt-40 hidden flex-col items-center justify-between md:flex md:flex-row">
         {/* Left Person Image */}
         <div className="w-full md:w-1/2">
-          <img src={leftPerson} alt="left person" className="h-[240px] rounded-lg object-cover md:mt-60 md:h-[500px]" />
+          <img
+            src={leftPerson}
+            alt="left person"
+            className="h-[240px] rounded-lg object-cover  md:mt-60 md:h-[500px]"
+          />
         </div>
 
         {/* Text Content in the Center */}
@@ -41,6 +45,7 @@ const Hero = () => {
             src={rightPerson}
             alt="right person"
             className="ml-auto h-[240px] rounded-lg object-cover md:h-[400px]"
+            style={{ marginRight: '-4%' }}
           />
         </div>
       </div>
@@ -64,12 +69,12 @@ const Hero = () => {
           <img
             src={leftPerson}
             className="absolute"
-            style={{ width: '50%', height: '60%', marginTop: '-10%' }}
+            style={{ width: '50%', height: '50%', marginTop: '-0%', marginLeft: '-3%' }}
             alt="Left Person"
           />
           <img
             src={rightPerson}
-            style={{ width: '50%', height: '60%', marginLeft: '60%', marginTop: '-30%' }}
+            style={{ width: '50%', height: '60%', marginLeft: '61%', marginTop: '-30%' }}
             alt="Right Person"
           />
         </div>

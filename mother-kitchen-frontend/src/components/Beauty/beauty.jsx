@@ -17,7 +17,7 @@ const SmallScreenContent = (
           Coming Soon
         </h2>
 
-        <img src={smallScreen} alt="Small Screen" className="w-full" />
+        <img src={smallScreen} alt="Small Screen" className="w-full mt-10" />
         <p className="text-center font-lexend text-white">
           Introducing MK Beauty London – beauty powered by nature! Our new products are crafted with turmeric, known for
           its natural glow-boosting benefits. Designed to be gentle yet effective, MK London brings you skincare that
@@ -39,7 +39,7 @@ const LargeScreenContent = (
           Coming Soon
         </h2>
 
-        <img src={desktopImage} alt="Desktop View" className="h-auto w-screen text-center" />
+        <img src={desktopImage} alt="Desktop View" className="h-auto w-screen -mt-10 text-center" />
 
         <p className="text-center text-center font-lexend text-white">
           Introducing MK Beauty London – beauty powered by nature! Our new products are crafted with turmeric, known for

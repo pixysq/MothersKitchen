@@ -42,7 +42,7 @@ const recipes = () => {
         <div className="flex items-center justify-center ">
           <Link
             to="/recipes"
-            className="flex w-fit items-center rounded-full border-b-8 border-l-2 border-r-8 border-t-2 border-black p-3 text-center font-gluten text-sm md:justify-center  md:text-3xl"
+            className="flex w-fit items-center rounded-full border-b-8 border-l-2 border-r-8 border-t-2 border-black p-3 text-center font-gluten text-sm md:justify-center  md:text-xl"
             style={{ background: '#41041A', color: '#FFFFFF' }}
             onClick={() => scroll(0, 0)}
           >

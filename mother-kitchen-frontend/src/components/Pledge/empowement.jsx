@@ -10,18 +10,18 @@ const Empowerment = () => {
           borderStyle: 'solid',
           borderColor: 'black',
           borderTopWidth: '10px',
-          borderLeftWidth: '10px',
+          borderLeftWidth: '5px',
           borderRightWidth: '18px',
           borderBottomWidth: '18px',
           borderRadius: '22px',
           backgroundColor: '#FCAF0B',
         }}
       >
-        <div className="rounded-2xl p-4 sm:p-6 md:p-8" style={{ border: '5px solid white',overflow:'hidden' }}>
+        <div className="rounded-2xl p-4 sm:p-6 md:p-8" style={{ border: '5px solid white', overflow: 'hidden' }}>
           {/* Heading 1 */}
-          <div className="text-center font-gluten text-2xl md:text-3xl font-bold sm:text-4xl md:text-5xl">
+          <div className="text-center font-gluten text-3xl font-extrabold sm:text-4xl md:text-3xl md:text-5xl md:font-bold">
             <p style={{ color: '#171717' }}>Empowerment and</p>
-            <p  style={{ color: '#A11506' }}>Sustainability</p>
+            <p style={{ color: '#A11506' }}>Sustainability</p>
           </div>
 
           {/* Description 1 */}

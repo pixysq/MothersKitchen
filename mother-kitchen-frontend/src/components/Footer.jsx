@@ -10,16 +10,19 @@ import emailjs from '@emailjs/browser'
 import { useState } from 'react'
 const FooterSm = ({ location }) => {
   const [email, setEmail] = useState('')
+  const [isSending, setIsSending] = useState(false)
 
   const handleSignUp = () => {
     if (!email || !email.includes('@')) {
       alert('Please enter a valid email address.')
       return
     }
+    // Set sending state to true
+    setIsSending(true)
 
-    const serviceID = ''
-    const templateID = ''
-    const userID = ''
+    const serviceID = import.meta.env.VITE_MK_SERVICE_ID
+    const templateID = import.meta.env.VITE_MK_SIGNIN_TEMPLATE
+    const userID = import.meta.env.VITE_MK_USER_ID
 
     // Prepare the template parameters – these must match the variables in your EmailJS template
     const templateParams = {
@@ -33,26 +36,46 @@ const FooterSm = ({ location }) => {
         console.log('Email successfully sent!', result.text)
         alert('Thank you for signing up!')
         setEmail('') // Clear the input on success
+        setIsSending(false) // Reset the sending state
       })
       .catch((error) => {
         console.error('There was an error sending the email:', error.text)
         alert('Oops! Something went wrong. Please try again later.')
+        setIsSending(false) // Reset the sending state on error as well
       })
   }
+
   return (
     <footer className="m-1 mt-20 rounded-bl-3xl rounded-br-3xl border-4 border-b-[14px] border-l-4 border-r-[10px] border-black bg-[#031E29] p-2 pb-0 text-white">
       <div className="mb-5 mt-2 flex w-full justify-between rounded-full border-2 border-b-4 border-r-4 border-black bg-white p-1">
         <input
           type="email"
-          onChange={(e) => setEmail(e.target.value)} // Update state on input change
+          onChange={(e) => setEmail(e.target.value)}
           className="w-[60%] bg-transparent py-1 pl-3 font-lexend text-sm tracking-tighter text-black outline-none"
           placeholder="EMAIL ADDRESS"
         />
         <Button
           className="!bg-green-base !py-2 font-lexend text-sm tracking-tighter hover:!bg-red-base"
           onClick={handleSignUp}
+          disabled={isSending}
         >
-          Sign Up
+          {isSending ? (
+            <svg
+              className="h-5 w-5 animate-spin text-white"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+              <path
+                className="opacity-75"
+                fill="currentColor"
+                d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+              ></path>
+            </svg>
+          ) : (
+            'Sign Up'
+          )}
         </Button>
       </div>
 
@@ -144,16 +167,19 @@ const FooterSm = ({ location }) => {
 }
 const FooterMd = ({ location }) => {
   const [email, setEmail] = useState('')
+  const [isSending, setIsSending] = useState(false)
 
   const handleSignUp = () => {
     if (!email || !email.includes('@')) {
       alert('Please enter a valid email address.')
       return
     }
+    // Set sending state to true
+    setIsSending(true)
 
-    const serviceID = ''
-    const templateID = ''
-    const userID = ''
+    const serviceID = import.meta.env.VITE_MK_SERVICE_ID
+    const templateID = import.meta.env.VITE_MK_SIGNIN_TEMPLATE
+    const userID = import.meta.env.VITE_MK_USER_ID
 
     // Prepare the template parameters – these must match the variables in your EmailJS template
     const templateParams = {
@@ -167,10 +193,12 @@ const FooterMd = ({ location }) => {
         console.log('Email successfully sent!', result.text)
         alert('Thank you for signing up!')
         setEmail('') // Clear the input on success
+        setIsSending(false) // Reset the sending state
       })
       .catch((error) => {
         console.error('There was an error sending the email:', error.text)
         alert('Oops! Something went wrong. Please try again later.')
+        setIsSending(false) // Reset the sending state on error as well
       })
   }
   return (
@@ -187,8 +215,24 @@ const FooterMd = ({ location }) => {
               className="w-[70%] bg-transparent py-1 pl-4 font-lexend text-[8px] tracking-tighter text-black outline-none"
               placeholder="EMAIL ADDRESS"
             />
-            <Button className="bg-green-base text-[8px]" onClick={handleSignUp}>
-              Sign Up
+            <Button className="bg-green-base text-[8px]" onClick={handleSignUp} disabled={isSending}>
+              {isSending ? (
+                <svg
+                  className="h-4 w-4 animate-spin text-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                  <path
+                    className="opacity-75"
+                    fill="currentColor"
+                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                  />
+                </svg>
+              ) : (
+                'Sign Up'
+              )}
             </Button>
           </div>
           <div className="social-medias flex gap-7">
@@ -205,7 +249,7 @@ const FooterMd = ({ location }) => {
               <TbBrandLinkedin className="h-10 w-10 md:h-8 md:w-8 lg:h-10 lg:w-10" />
             </Link>
             <Link to="">
-              <RiTwitterLine className="h-10 w-10 md:h-8 md:w-8 lg:h-10 lg:w-10"/>
+              <RiTwitterLine className="h-10 w-10 md:h-8 md:w-8 lg:h-10 lg:w-10" />
             </Link>
             <Link to="https://www.youtube.com/@MothersKitchen2023">
               {' '}
@@ -274,16 +318,19 @@ const FooterMd = ({ location }) => {
 }
 const FooterLg = ({ location }) => {
   const [email, setEmail] = useState('')
+  const [isSending, setIsSending] = useState(false)
 
   const handleSignUp = () => {
     if (!email || !email.includes('@')) {
       alert('Please enter a valid email address.')
       return
     }
+    // Set sending state to true
+    setIsSending(true)
 
-    const serviceID = ''
-    const templateID = ''
-    const userID = ''
+    const serviceID = import.meta.env.VITE_MK_SERVICE_ID
+    const templateID = import.meta.env.VITE_MK_SIGNIN_TEMPLATE
+    const userID = import.meta.env.VITE_MK_USER_ID
 
     // Prepare the template parameters – these must match the variables in your EmailJS template
     const templateParams = {
@@ -297,10 +344,12 @@ const FooterLg = ({ location }) => {
         console.log('Email successfully sent!', result.text)
         alert('Thank you for signing up!')
         setEmail('') // Clear the input on success
+        setIsSending(false) // Reset the sending state
       })
       .catch((error) => {
         console.error('There was an error sending the email:', error.text)
         alert('Oops! Something went wrong. Please try again later.')
+        setIsSending(false) // Reset the sending state on error as well
       })
   }
   return (
@@ -320,9 +369,26 @@ const FooterLg = ({ location }) => {
             />
             <Button
               onClick={handleSignUp}
-              className="!bg-green-base !py-2 font-lexend text-sm tracking-tighter hover:!bg-red-base"
+              className="flex items-center justify-center !bg-green-base !py-2 font-lexend text-sm tracking-tighter hover:!bg-red-base"
+              disabled={isSending} // Disable button while sending
             >
-              Sign Up
+              {isSending ? (
+                <svg
+                  className="h-5 w-5 animate-spin text-white"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                >
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                  <path
+                    className="opacity-75"
+                    fill="currentColor"
+                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                  />
+                </svg>
+              ) : (
+                'Sign Up'
+              )}
             </Button>
           </div>
           <div className="social-medias flex gap-7">
@@ -338,7 +404,7 @@ const FooterLg = ({ location }) => {
               <TbBrandLinkedin className="h-10 w-10 cursor-pointer duration-300 hover:text-green-base" />
             </Link>
             <Link to="">
-              <RiTwitterLine className="h-10 w-10 cursor-pointer duration-300 hover:text-green-base"  />
+              <RiTwitterLine className="h-10 w-10 cursor-pointer duration-300 hover:text-green-base" />
             </Link>
             <Link to="https://www.youtube.com/@MothersKitchen2023">
               {' '}

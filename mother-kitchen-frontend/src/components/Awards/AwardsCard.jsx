@@ -7,10 +7,14 @@ const AwardsCard = ({ year, awardImage, title, description }) => {
       {/* Year + Award Text */}
       <p className="mb-4 flex flex-row items-center justify-center font-gluten text-3xl font-bold text-white sm:text-left sm:text-2xl md:justify-start md:text-4xl">
         {year}
-        <div className="relative ml-4 flex items-center sm:inline-block md:ml-4">
-          <img src={leftMark} alt="Left Mark" className="absolute -left-2 -top-1  -mt-3 h-4 sm:h-6 md:-top-3" />
+        <div className="relative ml-4 items-center sm:inline-block md:ml-4">
+          <img src={leftMark} alt="Left Mark" className="absolute -left-3   -mt-3 h-4 sm:h-6 md:-top-2" />
           <span className="font-gluten text-3xl  font-extrabold text-white sm:text-4xl">Award</span>
-          <img src={rightMark} alt="Right Mark" className="absolute -right-2 -top-1 -mt-3 h-4 sm:h-6 md:-top-3" />
+          <img
+            src={rightMark}
+            alt="Right Mark"
+            className="absolute -right-3 -top-1 -mt-3 h-4 sm:h-6 md:-right-6 md:-top-2"
+          />
         </div>
       </p>
 

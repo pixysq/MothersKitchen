@@ -19,6 +19,7 @@ import sv from '../../assets/home/sv.png'
 import bhavana from '../../assets/home/bhavana.png'
 import ReviewCard from './ReviewCard'
 import anil from '../../assets/home/anil.png'
+import abishek from '../../assets/home/abishek.png'
 import pawan from '../../assets/home/pawan.png'
 import Slider from 'infinite-react-carousel'
 
@@ -46,6 +47,14 @@ const reviews1 = [
     profession: 'Senior Director,Global Sucing Walmart',
     bgColor: 'bg-[#A66C42]',
     image: nitin,
+  },
+  {
+    title: 'Enjoying your chana burfi ',
+    desc: 'Dear Shivani As I sit here enjoying your chana burfi that I just received, I realized I have been extremely selfish in not reaching out to you earlier. Just know I received your earlier letters. I am simply overwhelmed and touched by your confidence in me. Your story moved me to tears. Your determination to power ahead is inspiring. ',
+    name: 'Indra Nooyi',
+    profession: 'Former Pepsico CEO',
+    bgColor: 'bg-[#EF3D69]',
+    image: review1,
   },
   // {
   //   title: "Enjoying your Mother's Kitchen Products",
@@ -112,6 +121,22 @@ const reviews2 = [
     profession: 'Founder, Dabba Wala Mumbai',
     bgColor: 'bg-[#EF3D69]',
     image: pawan,
+  },
+  {
+    title: 'The most nostalgic memory of my childhood',
+    desc: 'The most nostalgic memory of my childhood is, eating Cardamom cookies. This biscuit has a flavor which is rare to find. I have tried it at various places but Mothers Kitchen is the only brand whose cardamom cookies have the same taste and are gluten free as well. Thank you for the authentic experience Mothers Kitchen.',
+    name: 'Abhishek Kapur',
+    profession: 'Indian film director, former actor',
+    bgColor: 'bg-[#AD6F70]',
+    image: abishek,
+  },
+  {
+    title: 'Enjoying your Atta cookies',
+    desc: "Just received this box of Atta cookies from Mother's Kitchen and I have to say they have a way to reach a person's heart..With a perfect crunch and So many health benefits Mother's Kitchen Atta cookies are my new favourites...Definitely gonna order more!Munching a cookie while I type",
+    name: 'Bhavana Aggarwal',
+    profession: 'Country Head HPE, Co-founder OYO group',
+    bgColor: 'bg-[#609ECB]',
+    image: bhavana,
   },
   // {
   //   title: "Enjoying your sweets from Mother's Kitchen Gift Pack ",
