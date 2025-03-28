@@ -107,7 +107,7 @@ const ProductsCardMd = ({ image, price1, price2, price3, quantity, title, desc, 
 const ProductsCardLg = ({ image, price1, price2, price3, quantity, title, desc, btnText, color, icon, gradient }) => {
   return (
     <div
-      className="relative z-[5] mx-auto my-10 h-[360px] w-[310px] rounded-3xl border-4 border-b-8 border-r-8 border-black p-2 px-2 py-3 font-lexend"
+      className="relative z-[5] mx-auto my-10 h-[270px] w-[310px] rounded-3xl border-4 border-b-8 border-r-8 border-black p-2 px-2 py-3 font-lexend"
       style={{ backgroundColor: color }}
     >
       <div className="flex h-[230px] w-[280px] items-center justify-center rounded-xl" style={{ background: gradient }}>
@@ -125,22 +125,22 @@ const ProductsCardLg = ({ image, price1, price2, price3, quantity, title, desc, 
       <div className="mt-3 flex gap-5 px-1 drop-shadow-sm">
         <div className="flex-1">
           <div className="flex text-[15px] font-bold tracking-tighter">
-            {price1} <span className="text-white">{price2}</span> <span>{price3}</span>
+            {/* {price1} <span className="text-white">{price2}</span> <span>{price3}</span> */}
           </div>
-          <div className="text-[8px] font-medium">{quantity}</div>
-          <Link to="https://rzp.io/rzp/motherskitchen">
+          {/* <div className="text-[8px] font-medium">{quantity}</div> */}
+          {/* <Link to="https://rzp.io/rzp/motherskitchen">
             <button className="mt-3 flex items-center gap-2 overflow-hidden text-ellipsis whitespace-nowrap rounded-md border-2 border-b-4 border-r-4 border-black bg-[#039860] px-3 py-1 font-gluten text-white">
               <span className="black-shadow-sm">{btnText}</span>
               <img src={Bag} alt="bag" className="h-4 w-4 object-contain" />
             </button>
-          </Link>
+          </Link> */}
         </div>
-        <div className="relative flex-1">
+        {/* <div className="relative flex-1">
           <h3 className="text-[14px] font-bold leading-4 tracking-[-0.1em]">{title}</h3>
           <h6 className="mt-2 pr-3 font-gluten text-[11px] font-semibold leading-3 text-white">{desc}</h6>
-        </div>
+        </div> */}
       </div>
-      {icon && <img loading="lazy" src={icon} alt="icon" className="absolute -bottom-7 -right-10 w-20" />}
+      {/* {icon && <img loading="lazy" src={icon} alt="icon" className="absolute -bottom-7 -right-10 w-20" />} */}
     </div>
   )
 }

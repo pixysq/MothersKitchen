@@ -1,6 +1,7 @@
 import { Girl, HHLeft, HHLeftMobile, HHRight, HHRightMobile, HeroLVec, ScrollDown } from '../../assets'
 import { HeroBgSm } from '../../assets/mobile'
 import Button from '../custom/Button'
+import whatsapp from '../../assets/whatsapp.png'
 import { Link } from 'react-router-dom'
 const HeroSm = () => {
   return (
@@ -30,6 +31,11 @@ const HeroSm = () => {
         alt="scroll"
         className="mx-auto  h-5 w-5 animate-bounce object-contain md:hidden"
       />
+
+           {/* whatsapp */}
+           <a className="absolute mt-[145%] ml-[80%] w-14 " href="https://wa.me/919310411544/?text=Hii">
+        <img src={whatsapp} />
+      </a>
     </div>
   )
 }
@@ -55,6 +61,11 @@ const HeroMd = () => {
       <div className="flex flex-1 items-start justify-end pt-4">
         <img loading="lazy" src={Girl} alt="gitl" />
       </div>
+
+            {/* whatsapp */}
+            <a className="absolute mt-[42%] ml-[82%] w-14 " href="https://wa.me/919310411544/?text=Hii">
+        <img src={whatsapp} />
+      </a>
     </div>
   )
 }
@@ -80,6 +91,11 @@ const HeroLg = () => {
       <div className="flex flex-1 items-start justify-end pt-4">
         <img loading="lazy" src={Girl} alt="gitl" />
       </div>
+
+      {/* whatsapp */}
+      <a className="absolute mt-[40%] ml-[85%] w-14 " href="https://wa.me/919310411544/?text=Hii">
+        <img src={whatsapp} />
+      </a>
     </div>
   )
 }

@@ -3,7 +3,7 @@ import cafeMobile from '../../assets/cafe/cafeMobile.png'
 
 const ComingSoon = () => {
   return (
-    <div className="-mt-50 md:-mt-40">
+    <div className="-mt-50 md:-mt-[125px]">
       {/* Show on small screens only */}
       <img src={cafeMobile} alt="Cafe Mobile" className="w-full md:hidden" />
       {/* Show on medium screens and larger */}

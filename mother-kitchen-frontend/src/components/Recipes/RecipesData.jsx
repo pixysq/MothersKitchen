@@ -10,7 +10,10 @@ import recipe9 from '../../assets/recipes/9.webp'
 import recipe10 from '../../assets/recipes/10.webp'
 import recipe11 from '../../assets/recipes/11.png'
 import recipe12 from '../../assets/recipes/12.png'
-
+import recipe13 from '../../assets/recipes/13.png'
+import recipe14 from '../../assets/recipes/14.png'
+import recipe15 from '../../assets/recipes/15.png'
+import recipe16 from '../../assets/recipes/16.png'
 const RecipesData = [
   {
     number: 1,
@@ -556,7 +559,7 @@ const RecipesData = [
 
   {
     number: 13,
-    image: recipe12,
+    image: recipe13,
     title: 'Enjoy Haldi Barfi',
     subtitle: 'In your Panjeere!',
     ingredients: [
@@ -604,6 +607,139 @@ const RecipesData = [
       ingredientsTitle: '#BA8D67',
       ingredients: '#000000',
       instructionsTitle: '#BA8D67',
+      instructions: '#000000',
+    },
+  },
+  {
+    number: 14,
+    image: recipe14,
+    title: 'Enjoy Dark Roast Bar',
+    subtitle: 'In your Donut!',
+    ingredients: [
+      '2 slices of bread (edges trimmed)',
+      '40 grams Mother&apos;s Kitchen Dark Roast Bar (melted or in small pieces)',
+      'Coating & Batter:',
+      '½ cup all-purpose flour (maida)',
+      '2 tablespoons corn flour',
+      '½ teaspoon baking powder',
+      '½ cup milk',
+      '1 teaspoon vanilla essence (optional)',
+      'A pinch of salt',
+      'For Frying:',
+      'Oil or butter (for deep frying)',
+      'For Chocolate Coating:',
+      '½ cup melted Mother&apos;s Kitchen Dark Roast Bar',
+      '1 teaspoon butter (for a glossy chocolate glaze)',
+      '1 tablespoon colorful sprinkles (optional, for topping)',
+    ],
+    instructions: [
+      '1. Prepare the Bread Base:',
+      '   Take two slices of bread and trim the edges.',
+      '   Place a small amount of Mother&apos;s Kitchen Dark Roast Bar (melted or in pieces) between the slices.',
+      '   Gently press the edges together to seal.',
+      '',
+      '2. Make the Batter:',
+      '   In a bowl, mix all-purpose flour, corn flour, baking powder, and salt.',
+      '   Gradually add milk and vanilla essence, stirring continuously until you get a smooth batter.',
+      '',
+      '3. Coat & Fry:',
+      '   Heat oil or butter in a deep pan for frying.',
+      '   Dip the prepared bread in the batter, ensuring an even coat.',
+      '   Deep fry until golden brown and crispy. Remove and drain excess oil on a paper towel.',
+      '',
+      '4. Chocolate Coating:',
+      '   Melt Mother&apos;s Kitchen Dark Roast Bar with 1 teaspoon of butter.',
+      '   Dip or drizzle the fried snack with melted chocolate.',
+      '   Sprinkle with colorful sprinkles for extra flavor.',
+      '',
+      '5. Serve & Enjoy:',
+      '   Let the chocolate coating set slightly before serving.',
+      '   For a richer taste, add crushed nuts, caramel drizzle, or white chocolate drizzle.',
+      '',
+      'Enjoy your homemade chocolate-coated donut-style snack! 🍩✨',
+    ],
+    colors: {
+      bg: '#EFE2AC',
+      title: '#FFFFFF',
+      subtitle: '#716842',
+      ingredientsTitle: '#716842',
+      ingredients: '#000000',
+      instructionsTitle: '#716842',
+      instructions: '#000000',
+    },
+  },
+  {
+    number: 15,
+    image: recipe15,
+    title: 'Enjoy Dark Roast Bar',
+    subtitle: 'In your Chocolate Roll !',
+    ingredients: [
+      'Dark chocolate – 30g',
+      'Bread – 2 pieces',
+      'Milk – 2 tbsp',
+      'Butter – 1 tsp',
+      'Chocolate syrup – for garnishing',
+    ],
+    instructions: [
+      '1. ⁠Melt the Chocolate:',
+      '   Break the dark chocolate into small pieces.',
+      '   Heat the milk in a pan and add the chocolate.',
+      '   Stir continuously on low heat until the chocolate melts completely.',
+      '',
+      '2. ⁠Prepare the Bread:',
+      '   Trim the edges of the bread slices.',
+      '   Flatten the bread using a rolling pin.',
+      '',
+      '3. ⁠Make the Roll:',
+      '   Spread the melted chocolate evenly over the bread.',
+      '   Roll the bread carefully and seal the edges using a little water',
+      '   ',
+      '',
+      '4. ⁠Garnish and Serve:',
+      '   Place the roll on a plate and drizzle chocolate syrup over it..',
+      '',
+      'Serve  chilled.',
+    ],
+    colors: {
+      bg: '#FFD7F3',
+      title: '#FFFFFF',
+      subtitle: '#9C5988',
+      ingredientsTitle: '#9C5988',
+      ingredients: '#000000',
+      instructionsTitle: ' #9C5988',
+      instructions: '#000000',
+    },
+  },
+  {
+    number: 16,
+    image: recipe16,
+    title: 'Enjoy Dark Roast Bar',
+    subtitle: 'In your Chocolate Shake !',
+    ingredients: [
+      '200ml Milk (chilled)',
+      '40g Mother&apos;s Kitchen Dark Roast Bar (melted or finely chopped)',
+      '30g Dry Fruits (almonds, cashews, walnuts – as per preference)',
+      'Ice cubes (optional)',
+      'Sugar or honey (optional, as per taste)',
+    ],
+    instructions: [
+      '1. Melt the Dark Roast Bar – If using solid bar, melt it in a microwave or double boiler until smooth.',
+
+      '2. Blend the Ingredients – In a blender, combine chilled milk, melted Dark Roast Bar, dry fruits, and ice cubes.',
+
+      '3. ⁠Blend to Perfection – Process for 30-40 seconds until the mixture becomes smooth and creamy.',
+
+      '4. ⁠Serve & Garnish – Pour into a glass and top with grated chocolate or finely chopped dry fruits.',
+
+      'Enjoy your rich and indulgent Chocolate Dry Fruit Shake!',
+    ],
+    colors: {
+      bg: '#F0DEB2',
+      title: '#FFFFFF',
+      subtitle: '#7D6F4E',
+      ingredientsTitle: '#7D6F4E',
+      ingredients: '#000000',
+      instructionsTitle: '#7D6F4E',
       instructions: '#000000',
     },
   },

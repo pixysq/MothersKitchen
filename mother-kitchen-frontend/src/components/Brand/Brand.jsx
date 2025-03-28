@@ -8,7 +8,7 @@ import img3 from '../../assets/brands/c.png'
 import img4 from '../../assets/brands/d.png'
 import img5 from '../../assets/brands/e.png'
 import img6 from '../../assets/brands/f.png'
-
+import store from '../../assets/brands/store.png'
 const Brand = () => {
   return (
     <>
@@ -100,6 +100,15 @@ const Brand = () => {
               boxClassName="!h-[100px] !w-[100px] sm:!h-[120px] sm:!w-[120px] md:!h-[160px] md:!w-[160px] lg:!h-[200px] lg:!w-[200px] bg-[#FFDEC7] text-black"
             />
           </Link>
+
+          <Link to="/store" onClick={() => scroll(0, 0)}>
+            <ImageBox
+              image={store}
+              className="max-w-full overflow-hidden object-contain !p-2 sm:!p-3 md:px-6"
+              clickable={true}
+              boxClassName="!h-[100px] !bg-[#244238] !w-[100px] sm:!h-[120px] sm:!w-[120px] md:!h-[160px] md:!w-[160px] lg:!h-[200px] lg:!w-[200px] bg-[#FFDEC7] text-black"
+            />
+          </Link>
         </div>
       </BorderDiv>
 
@@ -182,6 +191,15 @@ const Brand = () => {
               className="max-w-full overflow-hidden object-contain !p-1"
               clickable={true}
               boxClassName="h-[100px] w-[100px] bg-[#FFDEC7] text-black"
+            />
+          </Link>
+
+          <Link to="/store" onClick={() => scroll(0, 0)}>
+            <ImageBox
+              image={store}
+              className="max-w-full overflow-hidden object-contain !p-1"
+              clickable={true}
+              boxClassName="h-[100px] !bg-[#244238]  w-[100px] bg-[#FFDEC7] text-black"
             />
           </Link>
         </div>

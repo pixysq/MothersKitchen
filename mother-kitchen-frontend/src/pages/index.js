@@ -12,4 +12,27 @@ import Pledge from './Pledge'
 import Beauty from '../components/Beauty/beauty'
 import Living from '../components/Living/living'
 import Daksh from './Daksh'
-export { Home, About, Team, Brands, Comic, MkCafe, Contact, NotFound, Recipes, Awards, Pledge, Beauty,Living,Daksh }
+import Ambassador from './Ambassador'
+import Blogs from './Blogs'
+import Packaging from './Packaging'
+import Store from './Store'
+export {
+  Home,
+  About,
+  Team,
+  Brands,
+  Comic,
+  MkCafe,
+  Contact,
+  NotFound,
+  Recipes,
+  Awards,
+  Pledge,
+  Beauty,
+  Living,
+  Daksh,
+  Ambassador,
+  Blogs,
+  Packaging,
+  Store,
+}

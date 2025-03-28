@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import { Slider } from 'infinite-react-carousel'
-
+import leaf from '../../assets/leaf.png'
 // Import your assets & components (adjust paths as needed)
 import kajuPista from '../../assets/home/kajuPista.png'
 import attaBiscuit from '../../assets/home/attaBiscuit.png'
@@ -37,7 +37,7 @@ import {
 import ginger from '../../assets/products/gingerL.png'
 import ProductCard from './ProductCard'
 import ProductsInfiniteScroll from './ProductsInfiniteScroll'
-
+import ExploreButton from './ExploreButton'
 // Product Data
 const productsData = [
   {
@@ -388,6 +388,7 @@ const ProductsSm = () => {
           </div>
         </div>
       </section>
+      <ExploreButton />
       <ProductsInfiniteScroll />
     </div>
   )
@@ -406,32 +407,45 @@ const ProductsLg = ({ productsRef }) => {
             justifyContent: 'center',
           }}
         >
+          {/* Leaf image positioned in the background */}
           <img
             loading="lazy"
-            src={ProductsHeading}
+            src={leaf}
             alt="heading"
-            style={{ position: 'absolute', zIndex: -1, height: '96px' }}
+            className="mt-16"
+            style={{ position: 'absolute', height: '96px', zIndex: 1 }}
           />
+
+          {/* Heading text positioned absolutely on top of the leaf image */}
           <h3
+            className="mt-16"
             style={{
+              position: 'absolute',
+              zIndex: 2,
               textAlign: 'center',
               fontFamily: 'Gluten, sans-serif',
               fontSize: '2rem',
               fontWeight: 'bold',
-              color: '#d70000',
+              color: '#B13912',
             }}
           >
-            "<span style={{ color: '#553500' }}> TOP-</span>rated by taste buds"
+            <span style={{ color: '#553500' }}>" Wellness</span> in every bite "
           </h3>
         </div>
+
         <div
-          style={{ position: 'relative', paddingTop: '80px', paddingLeft: '40px', paddingRight: '40px' }}
+          style={{
+            position: 'relative',
+            paddingTop: '80px',
+            paddingLeft: '40px',
+            paddingRight: '40px',
+          }}
           ref={productsRef}
         >
           <Slider
             slidesToShow={3}
             dots={false}
-            arrows={true}
+            arrows={false}
             nextArrow={<NextArrow />}
             prevArrow={<PrevArrow />}
             initialSlide={1}
@@ -444,7 +458,7 @@ const ProductsLg = ({ productsRef }) => {
           </Slider>
         </div>
       </section>
-      <ProductsInfiniteScroll />
+      <ExploreButton />
     </>
   )
 }
@@ -470,7 +484,7 @@ const Products = () => {
         {/* Small Screen */}
         <ProductsSm productsRef={productsRef} />
       </div>
-      <div className="hidden md:block">
+      <div className="m-20 mb-10 hidden rounded-3xl bg-[#FBD68C] pb-5    md:block">
         {/* Large Screen */}
         <ProductsLg handleLeftClick={handleLeftClick} handleRightClick={handleRightClick} productsRef={productsRef} />
       </div>

@@ -1,5 +1,6 @@
 import React from 'react'
 import BorderDiv from '../custom/BorderDiv'
+import yt from '../../assets/yt.png'
 const RecipeCard = ({ number, image, title, subtitle, ingredients, instructions, colors }) => {
   const renderList = (items, itemColor) => {
     const result = []
@@ -113,6 +114,18 @@ const RecipeCard = ({ number, image, title, subtitle, ingredients, instructions,
             </h3>
             <div className="list-disc pl-6 font-lexend text-sm sm:text-base">
               {renderList(instructions, colors.instructions)}
+            </div>
+
+            {/* yt button */}
+            <div className="mt-5 flex items-center justify-end gap-2">
+              <div>
+                <p className="black-shadow  font-gluten md:text-2xl font-bold leading-none text-white">WATCH ON</p>
+                <p className="black-shadow  font-gluten md:text-2xl font-bold text-white">YOUTUBE</p>
+              </div>
+              <a href="https://www.youtube.com/@MothersKitchen2023">
+                {' '}
+                <img src={yt} className="md:w-[60px] w-[40px]" />
+              </a>
             </div>
           </div>
         </div>

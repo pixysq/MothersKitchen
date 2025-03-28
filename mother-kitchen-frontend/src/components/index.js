@@ -9,10 +9,12 @@ import { TeamInfo } from './Team'
 import Recipes from '../components/Home/recipes'
 import Loader from './Loader'
 import Main from './Daksh/Main'
+import ExploreButton from './Home/ExploreButton.jsx'
 export {
   Nutrition,
   Hero,
   Navbar,
+  ExploreButton,
   Products,
   Welcome,
   Reviews,
