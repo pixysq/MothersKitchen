@@ -32,9 +32,9 @@ const HeroSm = () => {
         className="mx-auto  h-5 w-5 animate-bounce object-contain md:hidden"
       />
 
-           {/* whatsapp */}
-           <a className="absolute mt-[145%] ml-[80%] w-14 " href="https://wa.me/919310411544/?text=Hii">
-        <img src={whatsapp} />
+      {/* whatsapp */}
+      <a className="fixed bottom-4 right-4 z-50 w-14" href="https://wa.me/919310411544/?text=Hii">
+        <img src={whatsapp} alt="WhatsApp" />
       </a>
     </div>
   )
@@ -62,10 +62,11 @@ const HeroMd = () => {
         <img loading="lazy" src={Girl} alt="gitl" />
       </div>
 
-            {/* whatsapp */}
-            <a className="absolute mt-[42%] ml-[82%] w-14 " href="https://wa.me/919310411544/?text=Hii">
-        <img src={whatsapp} />
-      </a>
+      {/* whatsapp */}
+      <a className="fixed bottom-4 right-4 z-50 w-14" href="https://wa.me/919310411544/?text=Hii">
+  <img src={whatsapp} alt="WhatsApp" />
+</a>
+
     </div>
   )
 }
@@ -93,9 +94,10 @@ const HeroLg = () => {
       </div>
 
       {/* whatsapp */}
-      <a className="absolute mt-[40%] ml-[85%] w-14 " href="https://wa.me/919310411544/?text=Hii">
-        <img src={whatsapp} />
-      </a>
+      <a className="fixed bottom-4 right-4 z-50 w-14" href="https://wa.me/919310411544/?text=Hii">
+  <img src={whatsapp} alt="WhatsApp" />
+</a>
+
     </div>
   )
 }

@@ -33,6 +33,8 @@ import {
   r,
   s,
   t,
+  BB,
+  CC,
 } from '../../assets'
 import ginger from '../../assets/products/gingerL.png'
 import ProductCard from './ProductCard'
@@ -52,7 +54,7 @@ const productsData = [
     icon: '',
   },
   {
-    image: o,
+    image: BB,
     price1: 'INR',
     price2: '339',
     price3: '',
@@ -60,11 +62,12 @@ const productsData = [
     title: 'Sanjeevani Immune Booster ',
     desc: '',
     btnText: 'Buy Now',
-    color: '#DC7F7D',
+    color: '#F2DF22',
     icon: '',
   },
+  
   {
-    image: q,
+    image: CC,
     price1: 'INR',
     price2: '299',
     price3: '',
@@ -72,9 +75,10 @@ const productsData = [
     title: 'Atta Cookies (with ghee)',
     desc: '',
     btnText: 'Buy Now',
-    color: '#D7A824',
+    color: '#FFA33B',
     icon: '',
   },
+  
   {
     image: b,
     price1: 'INR',
@@ -389,7 +393,7 @@ const ProductsSm = () => {
         </div>
       </section>
       <ExploreButton />
-      <ProductsInfiniteScroll />
+      {/* <ProductsInfiniteScroll /> */}
     </div>
   )
 }
@@ -484,7 +488,7 @@ const Products = () => {
         {/* Small Screen */}
         <ProductsSm productsRef={productsRef} />
       </div>
-      <div className="m-20 mb-10 hidden rounded-3xl bg-[#FBD68C] pb-5    md:block">
+      <div className="m-20 mb-10 hidden rounded-[50px] bg-[#FBD68C] pb-5    md:block">
         {/* Large Screen */}
         <ProductsLg handleLeftClick={handleLeftClick} handleRightClick={handleRightClick} productsRef={productsRef} />
       </div>

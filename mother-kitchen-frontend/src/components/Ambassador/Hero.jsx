@@ -48,7 +48,7 @@ const Hero = () => {
 
         {/* Right Column: Perks */}
         <div className="md:w-1/2">
-          <h3 className="mb-4 font-gluten text-xl font-bold text-[#2A2A2A] md:text-2xl">MK Ambassador Perks</h3>
+          <h3 className="mb-4 font-gluten text-xl text-center md:text-start font-bold text-[#2A2A2A] md:text-2xl">MK Ambassador Perks</h3>
           <ul className="list-inside list-disc space-y-8 font-lexend text-xs leading-relaxed text-[#060606] md:text-base">
             <li className="font-lexend text-sm">
               Welcome Kit: Get a curated selection of Mother's Kitchen products to kickstart your journey.

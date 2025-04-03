@@ -9,9 +9,8 @@ function ExploreButton() {
         className="flex w-fit cursor-pointer items-center justify-between rounded-full border-b-8 border-l-2 border-r-8 border-t-2 border-black p-3 pl-10 pr-10 text-center font-gluten text-xl sm:text-2xl md:text-3xl"
         style={{ background: '#9F2700', color: '#FFFFFF' }}
       >
-                <Link to="https://rzp.io/rzp/motherskitchen" className='flex justify-between items-center gap-8'>
-        <span>Explore our Shop</span>
-
+        <Link to="https://product.motherskitchen.co.in/" className="flex items-center justify-between gap-8">
+          <span>Explore our Shop</span>
 
           <img src={exploreIcon} className="w-[50px]" />
         </Link>

@@ -163,7 +163,8 @@ import q from './products/q.png'
 import r from './products/r.png'
 import s from './products/s.png'
 import t from './products/t.png'
-
+import CC from './products/CC.png'
+import BB from './products/BB.png'
 export {
   TextLogo,
   PaperPlane,
@@ -317,4 +318,6 @@ export {
   r,
   s,
   t,
+  BB,
+  CC,
 }

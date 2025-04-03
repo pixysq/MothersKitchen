@@ -33,7 +33,7 @@ const ReferralProgram = () => {
 
             <tbody>
               {/* For Retail Orders */}
-              <tr className="border-b-2 border-black ">
+              <tr className="border-b-2 font-bold border-black ">
                 <td className="px-4 py-10 align-top font-lexend font-bold">For Retail Orders:</td>
                 <td className="px-4 py-3 align-top">
                   <ul className="list-inside list-disc space-y-6 font-lexend">
@@ -44,7 +44,7 @@ const ReferralProgram = () => {
               </tr>
 
               {/* For Corporate Orders (Bulk Purchases) */}
-              <tr className="border-b-2 border-black">
+              <tr className="border-b-2 font-bold border-black">
                 <td className="px-4 py-10 align-top font-lexend font-bold">For Corporate Orders (Bulk Purchases):</td>
                 <td className="px-4 py-3 align-top">
                   <ul className="list-inside list-disc  space-y-8 font-lexend">
@@ -58,7 +58,7 @@ const ReferralProgram = () => {
               </tr>
 
               {/* Bonus Perks */}
-              <tr className="border-b-2 border-black">
+              <tr className="border-b-2 font-bold border-black">
                 <td className="px-4 py-10 align-top font-lexend font-semibold ">Bonus Perks:</td>
                 <td className="px-4 py-3 align-top">
                   <ul className="list-inside list-disc  space-y-8 font-lexend">
@@ -111,7 +111,7 @@ const ReferralProgram = () => {
         </div>
 
         {/*join */}
-        <p className="mt-10 md:pl-10 md:pr-10 pl-5 pr-5 text-center font-gluten text-2xl font-bold text-[#A11506] ">
+        <p className="mt-10 md:pl-10 md:pr-10 pl-5 pr-5 text-center font-gluten text-2xl font-[900] text-[#A11506] ">
           Join today and turn your love for homemade flavors into a rewarding experience!
         </p>
 
