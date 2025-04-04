@@ -2,6 +2,7 @@ import { Girl, HHLeft, HHLeftMobile, HHRight, HHRightMobile, HeroLVec, ScrollDow
 import { HeroBgSm } from '../../assets/mobile'
 import Button from '../custom/Button'
 import whatsapp from '../../assets/whatsapp.png'
+import WhatsAppButton from './Whatsapp'
 import { Link } from 'react-router-dom'
 const HeroSm = () => {
   return (
@@ -33,9 +34,10 @@ const HeroSm = () => {
       />
 
       {/* whatsapp */}
-      <a className="fixed bottom-4 right-4 z-50 w-14" href="https://wa.me/919310411544/?text=Hii">
+      {/* <a className="fixed bottom-4 right-4 z-50 w-14" href="https://wa.me/919310411544/?text=Hii">
         <img src={whatsapp} alt="WhatsApp" />
-      </a>
+      </a> */}
+      <WhatsAppButton/>
     </div>
   )
 }
@@ -63,9 +65,10 @@ const HeroMd = () => {
       </div>
 
       {/* whatsapp */}
-      <a className="fixed bottom-4 right-4 z-50 w-14" href="https://wa.me/919310411544/?text=Hii">
+      {/* <a className="fixed bottom-4 right-4 z-50 w-14" href="https://wa.me/919310411544/?text=Hii">
         <img src={whatsapp} alt="WhatsApp" />
-      </a>
+      </a> */}
+      <WhatsAppButton/>
     </div>
   )
 }
@@ -93,9 +96,10 @@ const HeroLg = () => {
       </div>
 
       {/* whatsapp */}
-      <a className="fixed bottom-4 right-4 z-50 w-14" href="https://wa.me/919310411544/?text=Hii">
+      {/* <a className="fixed bottom-4 right-4 z-50 w-14" href="https://wa.me/919310411544/?text=Hii">
         <img src={whatsapp} alt="WhatsApp" />
-      </a>
+      </a> */}
+      <WhatsAppButton/>
     </div>
   )
 }
