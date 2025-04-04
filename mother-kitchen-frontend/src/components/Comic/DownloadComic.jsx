@@ -129,7 +129,7 @@ const DownloadComic = () => {
           <div className="flex flex-col gap-2 sm:flex-row sm:gap-4">
             {/* YouTube Button */}
             <Link
-              to="https://www.youtube.com/@MothersKitchen2023"
+              to="https://www.youtube.com/playlist?list=PLH7v3u8zaEuoL4Qx4H2MxI24Epo38WBlX"
               className="flex cursor-pointer items-center gap-2 border-2 border-b-4 border-r-4 border-black bg-green-base px-4 py-2 text-xs uppercase duration-300 hover:scale-95 sm:px-6 sm:py-3 sm:text-sm lg:px-8 lg:py-4 lg:text-base"
             >
               Watch on YouTube

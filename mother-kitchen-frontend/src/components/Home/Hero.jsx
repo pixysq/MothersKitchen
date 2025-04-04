@@ -64,9 +64,8 @@ const HeroMd = () => {
 
       {/* whatsapp */}
       <a className="fixed bottom-4 right-4 z-50 w-14" href="https://wa.me/919310411544/?text=Hii">
-  <img src={whatsapp} alt="WhatsApp" />
-</a>
-
+        <img src={whatsapp} alt="WhatsApp" />
+      </a>
     </div>
   )
 }
@@ -95,9 +94,8 @@ const HeroLg = () => {
 
       {/* whatsapp */}
       <a className="fixed bottom-4 right-4 z-50 w-14" href="https://wa.me/919310411544/?text=Hii">
-  <img src={whatsapp} alt="WhatsApp" />
-</a>
-
+        <img src={whatsapp} alt="WhatsApp" />
+      </a>
     </div>
   )
 }

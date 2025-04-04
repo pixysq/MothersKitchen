@@ -119,12 +119,12 @@ const RecipeCard = ({ number, image, title, subtitle, ingredients, instructions,
             {/* yt button */}
             <div className="mt-5 flex items-center justify-end gap-2">
               <div>
-                <p className="black-shadow  font-gluten md:text-2xl font-bold leading-none text-white">WATCH ON</p>
-                <p className="black-shadow  font-gluten md:text-2xl font-bold text-white">YOUTUBE</p>
+                <p className="black-shadow  font-gluten font-bold leading-none text-white md:text-2xl">WATCH ON</p>
+                <p className="black-shadow  font-gluten font-bold text-white md:text-2xl">YOUTUBE</p>
               </div>
-              <a href="https://www.youtube.com/@MothersKitchen2023">
+              <a href="https://www.youtube.com/playlist?list=PLH7v3u8zaEurigQMg63e-vaUWAr0BqdRt">
                 {' '}
-                <img src={yt} className="md:w-[60px] w-[40px]" />
+                <img src={yt} className="w-[40px] md:w-[60px]" />
               </a>
             </div>
           </div>
