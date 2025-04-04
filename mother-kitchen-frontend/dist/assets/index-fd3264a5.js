@@ -1,1 +1,0 @@
-import{r as s}from"./index-e4fa3fbc.js";const p=()=>{const[o,e]=s.useState(!1),[t,a]=s.useState({}),r=n=>{e(!0),a(n)},l=s.useCallback(()=>{e(!1)},[]);return{isOpen:o,openModal:r,closeModal:l,modalProps:t}};export{p as u};
