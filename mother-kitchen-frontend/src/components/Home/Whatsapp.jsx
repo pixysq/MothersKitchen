@@ -75,16 +75,16 @@ const WhatsAppButton = () => {
         <button onClick={() => setIsOpen(!isOpen)} className="fixed bottom-4 right-4 w-14">
           <img src={isOpen ? closePopUp : whatsapp} alt="WhatsApp Toggle" />
         </button>
-      </div>
 
-      <a
-        href="https://product.motherskitchen.co.in/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-4 right-20 z-[9999] w-14 cursor-pointer"
-      >
-        <img src={shopBtn} alt="Shop Now" className="h-auto w-full" />
-      </a>
+        <a
+          href="https://product.motherskitchen.co.in/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="fixed bottom-4 right-20 w-14 cursor-pointer"
+        >
+          <img src={shopBtn} alt="Shop Now" className="h-auto w-full" />
+        </a>
+      </div>
     </>
   )
 }
