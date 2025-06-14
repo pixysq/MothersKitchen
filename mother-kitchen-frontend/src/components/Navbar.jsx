@@ -10,7 +10,7 @@ const navLinks = [
   { name: 'Home', path: '/' },
   { name: 'About Us', path: '/about' },
   { name: 'Team', path: '/team' },
-  { name: 'Brands', path: '/brands' },
+  { name: 'Mk Food', path: '/mk' },
   { name: 'Packaging', path: '/packaging' },
   { name: 'Pledge', path: '/pledge' },
   { name: 'Success Stories', path: '/comic' },

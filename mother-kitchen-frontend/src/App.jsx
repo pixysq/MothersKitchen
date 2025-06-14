@@ -1,4 +1,9 @@
+// App.js
+import React, { useState, useEffect } from 'react'
 import { Route, Routes, useLocation } from 'react-router-dom'
+import Modal from './components/Model/Model'
+import WhatsAppButton from './components/Home/Whatsapp'
+import StickyExploreBtn from './components/Home/StickExploreBtn'
 import {
   About,
   Brands,
@@ -32,16 +37,28 @@ import { Suspense } from 'react'
 
 const App = () => {
   const location = useLocation()
+  const [showModal, setShowModal] = useState(false)
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowModal(true)
+    }, 1000) // 1 second delay
+
+    return () => clearTimeout(timer)
+  }, [])
+
+  const handleClose = () => setShowModal(false)
 
   return (
     <>
       <Suspense fallback={<Loader />}>
         <Navbar />
+        <WhatsAppButton />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="mk" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/team" element={<Team />} />
-          <Route path="/brands" element={<Brands />} />
+          <Route path="/" element={<Brands />} />
           <Route path="/comic" element={<Comic />} />
           <Route path="/cafe" element={<MkCafe />} />
           <Route path="/contact" element={<Contact />} />
@@ -66,6 +83,7 @@ const App = () => {
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
+        <Modal isOpen={showModal} onClose={handleClose} />
       </Suspense>
     </>
   )

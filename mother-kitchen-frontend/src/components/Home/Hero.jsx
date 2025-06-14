@@ -37,7 +37,7 @@ const HeroSm = () => {
       {/* <a className="fixed bottom-4 right-4 z-50 w-14" href="https://wa.me/919310411544/?text=Hii">
         <img src={whatsapp} alt="WhatsApp" />
       </a> */}
-      <WhatsAppButton/>
+      <WhatsAppButton />
     </div>
   )
 }
@@ -68,7 +68,7 @@ const HeroMd = () => {
       {/* <a className="fixed bottom-4 right-4 z-50 w-14" href="https://wa.me/919310411544/?text=Hii">
         <img src={whatsapp} alt="WhatsApp" />
       </a> */}
-      <WhatsAppButton/>
+      <WhatsAppButton />
     </div>
   )
 }
@@ -99,7 +99,7 @@ const HeroLg = () => {
       {/* <a className="fixed bottom-4 right-4 z-50 w-14" href="https://wa.me/919310411544/?text=Hii">
         <img src={whatsapp} alt="WhatsApp" />
       </a> */}
-      <WhatsAppButton/>
+      <WhatsAppButton />
     </div>
   )
 }

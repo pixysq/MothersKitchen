@@ -20,7 +20,7 @@ const Brand = () => {
         </p>
         {/* first row */}
         <div className="mb-20 flex justify-center gap-20">
-          <Link to="/" onClick={() => scroll(0, 0)}>
+          <Link to="/mk" onClick={() => scroll(0, 0)}>
             <ImageBox
               image={img3}
               className="max-w-full overflow-hidden object-contain !p-2 sm:!p-3 md:px-6"
@@ -120,7 +120,7 @@ const Brand = () => {
         </p>
         {/* Grid with two columns, centered items */}
         <div className="grid grid-cols-2 justify-items-center gap-4">
-          <Link to="/" onClick={() => scroll(0, 0)}>
+          <Link to="/mk" onClick={() => scroll(0, 0)}>
             <ImageBox
               image={img3}
               className="max-w-full overflow-hidden object-contain !p-1"
