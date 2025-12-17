@@ -1,1 +1,0 @@
-import{j as s}from"./index-aa380316.js";const e="/assets/cafe-e0e95871.png",a="/assets/cafeMobile-e661cffd.png",l=()=>s.jsxs("div",{className:"-mt-50 md:-mt-[125px]",children:[s.jsx("img",{src:a,alt:"Cafe Mobile",className:"w-full md:hidden"}),s.jsx("img",{src:e,alt:"Cafe",className:"hidden w-full md:block"})]});export{l as default};
