@@ -1,12 +1,12 @@
 // App.jsx
-import { useState, useEffect, lazy, Suspense } from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { lazy, Suspense, useEffect, useState } from 'react'
+import { Route, Routes } from 'react-router-dom'
 
-import Navbar from './components/Navbar'
 import Footer from './components/Footer'
+import WhatsAppButton from './components/Home/Whatsapp'
 import Loader from './components/Loader'
 import Modal from './components/Model/Model'
-import WhatsAppButton from './components/Home/Whatsapp'
+import Navbar from './components/Navbar'
 
 // Lazy-loaded pages
 const Home = lazy(() => import('./pages/Home'))
@@ -27,8 +27,6 @@ const Packaging = lazy(() => import('./pages/Packaging'))
 const Store = lazy(() => import('./pages/Store'))
 const NotFound = lazy(() => import('./pages/NotFound'))
 const Brands = lazy(() => import('./pages/Brands'))
-
-
 
 // Blogs
 const Blog1 = lazy(() => import('./components/Blogs/Blog1'))

@@ -1,0 +1,1 @@
+import{j as s}from"./index-Dhs9giEs.js";import{A as o,M as t,D as e,S as r,L as a}from"./index-BvwSQHam.js";const n=()=>s.jsxs(s.Fragment,{children:[s.jsx(o,{}),s.jsx(t,{}),s.jsx(e,{}),s.jsx(r,{}),s.jsx(a,{elements:["Home","Comic","Contact"]})]});export{n as default};
